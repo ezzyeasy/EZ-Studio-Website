@@ -1,0 +1,26 @@
+# Dependencies (never commit local node_modules or symlinks)
+node_modules/
+node_modules
+
+# Astro build output & cache
+dist/
+.astro/
+
+# Cloudflare Wrangler local cache
+.wrangler/
+
+# Untouched high-res source media (keep local; only optimized public/Assets/ is deployed)
+assets-raw/
+
+# macOS metadata & external drive AppleDouble files
+.DS_Store
+._*
+**/.DS_Store
+**/._*
+
+# Environment & logs
+.env
+.env.*
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
