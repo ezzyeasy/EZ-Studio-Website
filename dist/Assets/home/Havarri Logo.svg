@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.28 288.12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f26739;
+      }
+    </style>
+  </defs>
+  <g id="Main_logo" data-name="Main logo">
+    <rect class="cls-1" width="21.23" height="288.12"/>
+    <rect class="cls-1" x="36.58" y=".67" width="22.36" height="287.44"/>
+    <rect class="cls-1" x="74.19" width="22.56" height="288.12"/>
+    <rect class="cls-1" x="192.34" width="22.42" height="288.12"/>
+    <rect class="cls-1" x="230.12" width="22.36" height="288.12"/>
+    <rect class="cls-1" x="267.89" width="22.41" height="288.12"/>
+    <rect class="cls-1" x="96.75" y="113.91" width="80.28" height="23.64"/>
+    <rect class="cls-1" x="112.11" y="151.59" width="80.22" height="22.36"/>
+    <polygon class="cls-1" points="339.69 8.9 289.25 101.36 289.99 146.76 351.84 29.48 339.69 8.9"/>
+    <polygon class="cls-1" points="359.04 43.25 289.25 172.54 289.99 217.93 371.19 63.83 359.04 43.25"/>
+    <polygon class="cls-1" points="377.21 79.58 289.25 242.72 289.99 288.12 389.35 100.16 377.21 79.58"/>
+    <polygon class="cls-1" points="343.45 0 367.04 0 519.46 288.12 495.08 288.12 343.45 0"/>
+    <polygon class="cls-1" points="381.75 0 405.34 0 557.76 288.12 533.38 288.12 381.75 0"/>
+    <polygon class="cls-1" points="419.26 0 442.85 0 595.28 288.12 570.89 288.12 419.26 0"/>
+  </g>
+</svg>

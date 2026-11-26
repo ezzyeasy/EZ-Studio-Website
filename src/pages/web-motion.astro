@@ -1,0 +1,134 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSlideshow from '../components/HeroSlideshow.astro';
+import '../styles/web-motion.css';
+
+const heroImages = [
+  '/Assets/web/web_2.webp',
+  '/Assets/web/web_1.webp'
+];
+---
+
+<BaseLayout
+  title="Web Motion | EZ Studio"
+  description="Explore kinetic interfaces, UX/UI app design, and interactive storytelling prototypes by Ezzy Razman."
+  currentPath="/web-motion.html"
+>
+    <main class="main-content">
+        <!-- Portfolio Hero Section -->
+        <section class="portfolio-hero reveal-section">
+            <HeroSlideshow images={heroImages} />
+
+            <!-- Interactive Grid Overlay & Ambient Glow -->
+            <div class="hero-grid-overlay"></div>
+            <div class="hero-ambient-glow" style="background: radial-gradient(circle at center, rgba(0, 255, 255, 0.15) 0%, transparent 60%);"></div>
+
+            <div class="portfolio-hero-content">
+                <span class="portfolio-badge">DIVISION 05 // WEB MOTION</span>
+                <h1 class="portfolio-hero-title">
+                    <span class="word" style="--i: 1;">KINETIC</span>
+                    <span class="word" style="--i: 2;">INTERFACES,</span> <br class="desktop-only">
+                    <span class="word" style="--i: 3;">ANIMATING</span>
+                    <span class="word highlight text-glow" style="--i: 4;">INTERACTIONS.</span>
+                </h1>
+                <p class="portfolio-hero-desc">
+                    Designing responsive user interactions, SVG kinetic transitions, and functional interface layouts.
+                    Uniting web animation techniques with standard layout systems.
+                </p>
+            </div>
+            <div class="scroll-prompt">
+                <span class="scroll-text">SCROLL TO EXPLORE</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- Web Motion Project Section -->
+        <section class="cinematic-videos-section reveal-section" id="web-project">
+            <div class="portfolio-container">
+                <span class="about-badge reveal-item" style="--reveal-delay: 0.1s;">01 | INTERACTIVE WEB</span>
+                <h2 class="section-title reveal-item" style="--reveal-delay: 0.2s;">
+                    FEATURED INTERACTIVE PROTOTYPE<span class="highlight text-glow">.</span>
+                </h2>
+
+                <div class="web-projects-grid reveal-item" style="--reveal-delay: 0.3s;">
+                    <!-- Project 1 -->
+                    <div class="web-project-card">
+                        <div class="web-project-thumbnail-wrapper">
+                            <img src="/Assets/web/web_2.webp" alt="Kinetic Scrolling Portfolio Thumbnail" class="web-project-thumbnail" width="550" height="350" loading="lazy" decoding="async">
+                            <div class="play-overlay" style="background: rgba(10, 10, 10, 0.3);">
+                                <a href="https://www.behance.net/gallery/253119459/Web-Interaction-Design-Disconnected" target="_blank" rel="noopener noreferrer" class="play-btn" style="width: 50px; height: 50px;" aria-label="Explore Live Project Links">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2.5" fill="none">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="web-project-info">
+                            <span class="video-category" style="color: var(--clr-teal); font-size: 0.68rem; font-weight: 700; letter-spacing: 2px;">SEOULTECH // INTERACTIVE WEB</span>
+                            <h3 class="web-project-title">Disconnected</h3>
+                            <p class="web-project-description">
+                                Through immersive storytelling and motion graphics, the project transforms a "what-if"
+                                scenario into a journey that urges reflection on our deep dependency on technology.
+                            </p>
+                            <div class="gear-specs-group" style="margin-bottom: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.04); padding-top: 1rem;">
+                                <h4 class="specs-group-title">PROJECT DELIVERABLES</h4>
+                                <div class="specs-pills">
+                                    <span class="spec-pill pill-orange">HTML / CSS / JS</span>
+                                    <span class="spec-pill pill-orange">Antigravity</span>
+                                    <span class="spec-pill pill-teal">Interactive Storytelling</span>
+                                </div>
+                            </div>
+                            <a href="https://www.behance.net/gallery/253119459/Web-Interaction-Design-Disconnected" target="_blank" rel="noopener noreferrer" class="watch-youtube-btn">
+                                <span>Explore Live Project</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="web-project-card">
+                        <div class="web-project-thumbnail-wrapper">
+                            <img src="/Assets/web/web_1.webp" alt="LinkedIn App Redesign Thumbnail" class="web-project-thumbnail" width="550" height="350" loading="lazy" decoding="async">
+                            <div class="play-overlay" style="background: rgba(10, 10, 10, 0.3);">
+                                <a href="https://www.behance.net/gallery/237313787/UX-Design-LinkedIn-App-Redesign" target="_blank" rel="noopener noreferrer" class="play-btn" style="width: 50px; height: 50px;" aria-label="Explore Live Project Links">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2.5" fill="none">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="web-project-info">
+                            <span class="video-category" style="color: var(--clr-teal); font-size: 0.68rem; font-weight: 700; letter-spacing: 2px;">SEOULTECH // APP REDESIGN</span>
+                            <h3 class="web-project-title">LinkedIn</h3>
+                            <p class="web-project-description">
+                                A complete corporate and casual redesign of the LinkedIn mobile app, reimagined to
+                                elevate both user experience and interface. This project redefines LinkedIn’s direction
+                                from strictly professional to a smarter, more casual platform that welcomes
+                                everyone—from beginners to industry experts.
+                            </p>
+                            <div class="gear-specs-group" style="margin-bottom: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.04); padding-top: 1rem;">
+                                <h4 class="specs-group-title">PROJECT DELIVERABLES</h4>
+                                <div class="specs-pills">
+                                    <span class="spec-pill pill-orange">Figma</span>
+                                    <span class="spec-pill pill-teal">Prototyping</span>
+                                    <span class="spec-pill pill-teal">Market Research</span>
+                                    <span class="spec-pill pill-teal">User Interface</span>
+                                </div>
+                            </div>
+                            <a href="https://www.behance.net/gallery/237313787/UX-Design-LinkedIn-App-Redesign" target="_blank" rel="noopener noreferrer" class="watch-youtube-btn">
+                                <span>Explore Live Project</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</BaseLayout>

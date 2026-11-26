@@ -1,0 +1,189 @@
+/* ==========================================================================
+   EZ STUDIO - Web Motion Page Stylesheet
+   ========================================================================== */
+
+/* Web Motion Project Section & Spacing */
+.cinematic-videos-section {
+  padding: 5rem 8% 7.5rem 8%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Web Motion 2-Column Grid & Interactive Project Cards */
+.web-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.web-project-card {
+  position: relative;
+  background: rgba(18, 18, 18, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 2.2rem;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.3, 1), border-color 0.5s ease, background 0.5s ease;
+}
+
+.web-project-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.015);
+  border-color: rgba(0, 255, 255, 0.15);
+}
+
+.web-project-thumbnail-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  aspect-ratio: 16/9;
+  background: #0d0d0d;
+}
+
+.web-project-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.3, 1);
+}
+
+.web-project-card:hover .web-project-thumbnail {
+  transform: scale(1.04);
+}
+
+.play-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.85;
+  transition: opacity 0.4s ease, background 0.4s ease;
+}
+
+.web-project-card:hover .play-overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.play-btn {
+  width: 54px;
+  height: 54px;
+  background: rgba(18, 18, 18, 0.9);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  color: var(--clr-white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.3, 1), background 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.08);
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+  background: var(--clr-teal);
+  color: var(--clr-white);
+  border-color: #00ffff;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.35);
+}
+
+.web-project-info {
+  margin-top: 1.8rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.web-project-title {
+  margin: 0.6rem 0 0.8rem;
+  font-family: var(--font-header);
+  font-size: 1.5rem;
+  color: var(--clr-white);
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.web-project-description {
+  margin-bottom: 1.5rem;
+  color: var(--clr-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Gear Specs & Project Deliverables Tag System */
+.gear-specs-group {
+  margin-bottom: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  padding-top: 1rem;
+}
+
+.specs-group-title {
+  font-family: var(--font-header);
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.specs-pills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.spec-pill {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: 1px solid transparent;
+}
+
+.pill-orange {
+  background: rgba(254, 93, 38, 0.05);
+  color: #ff7744;
+  border-color: rgba(254, 93, 38, 0.12);
+}
+
+.pill-teal {
+  background: rgba(0, 128, 128, 0.06);
+  color: #33cccc;
+  border-color: rgba(0, 128, 128, 0.15);
+}
+
+
+
+@media (max-width: 992px) {
+  .web-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .web-project-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .web-project-card {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+
+  .btn-visit-site {
+    width: 100%;
+    justify-content: center;
+    min-height: 46px;
+  }
+}

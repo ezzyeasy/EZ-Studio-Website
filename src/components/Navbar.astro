@@ -1,0 +1,68 @@
+---
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = Astro.url.pathname } = Astro.props;
+
+const isHome = currentPath === '/' || currentPath === '/index.html';
+const isPortfolioPage = [
+  'cinematic-visual',
+  'design-identity',
+  'cinematic-motion',
+  'digital-form',
+  'web-motion',
+  'printed-work'
+].some(page => currentPath.includes(page));
+const isAboutMe = currentPath.includes('more-about-me');
+---
+<header class="header" id="headerNav">
+    <!-- Navigation Backdrop Overlay (Mobile) -->
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+    <!-- Brand Logo -->
+    <a href="/" class="nav-logo" aria-label="EZ Studio Home">
+        <img src="/Assets/global/Primary Light.svg" alt="EZ Studio Logo" class="nav-logo-img" width="102" height="42" fetchpriority="high">
+    </a>
+
+    <!-- Hamburger Toggle for Mobile -->
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar bar-top"></span>
+        <span class="bar bar-mid"></span>
+        <span class="bar bar-bot"></span>
+    </button>
+
+    <!-- Navigation Links List -->
+    <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list" id="navLinksList">
+            <li class={`nav-item ${isHome ? 'active' : ''}`} data-nav="home">
+                <a href="/" class="nav-link" id="navLinkHome">Home</a>
+            </li>
+            <li class={`nav-item ${isAboutMe ? 'active' : ''}`} data-nav="about">
+                <a href="/#about" class="nav-link" id="navLinkAbout">About Me</a>
+            </li>
+
+            <!-- Portfolio Dropdown Menu -->
+            <li class={`nav-item dropdown ${isPortfolioPage ? 'active' : ''}`} id="portfolioDropdown" data-nav="portfolio">
+                <a href="/#portfolio" class="nav-link dropdown-toggle" id="portfolioDropdownBtn" role="button" aria-haspopup="true" aria-expanded="false">
+                    Portfolio
+                    <svg class="dropdown-arrow" viewBox="0 0 10 6" width="10" height="6" fill="currentColor">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" id="portfolioMenu">
+                    <li><a href="/cinematic-visual.html" class="dropdown-item">Cinematic Visual</a></li>
+                    <li><a href="/design-identity.html" class="dropdown-item">Design & Identity</a></li>
+                    <li><a href="/cinematic-motion.html" class="dropdown-item">Cinematic Motion</a></li>
+                    <li><a href="/digital-form.html" class="dropdown-item">Digital Form</a></li>
+                    <li><a href="/web-motion.html" class="dropdown-item">Web Motion</a></li>
+                    <li><a href="/printed-work.html" class="dropdown-item">Printed Work</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item" data-nav="contact">
+                <a href="/#contact" class="nav-link nav-cta" id="navLinkContact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>

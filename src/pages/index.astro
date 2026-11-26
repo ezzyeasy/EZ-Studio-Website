@@ -1,0 +1,990 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroVideo from "../components/HeroVideo.astro";
+import "../styles/home.css";
+---
+
+<BaseLayout
+    title="Ezzy Razman | EZ Studio"
+    description="EZ Studio - Creative Multimedia Designer specializing in video editing, motion graphics, 3D and UI/UX."
+    currentPath="/"
+>
+    <!-- Main Content Bounding Box -->
+    <main class="main-content">
+        <!-- Hero Landing Section -->
+        <section class="hero" id="home">
+            <HeroVideo mp4Src="/Assets/home/home_main.mp4" />
+
+            <!-- Interactive Grid Overlay & Ambient Glow -->
+            <div class="hero-grid-overlay"></div>
+            <div class="hero-ambient-glow"></div>
+
+            <div class="hero-content">
+                <p class="hero-subtitle">
+                    Ezzy Razman’s Portfolio & Creative Studio
+                </p>
+                <h1 class="hero-title">
+                    <span class="word" style="--i: 1;">Made</span>
+                    <span class="word" style="--i: 2;">with</span>
+                    <span class="word highlight text-glow" style="--i: 3;"
+                        >imagination,</span
+                    >
+                    <br class="desktop-only" /><span
+                        class="word"
+                        style="--i: 4;">kept</span
+                    >
+                    <span class="word" style="--i: 5;">as</span>
+                    <span
+                        class="word highlight text-glow"
+                        style="--i: 6;">memories.</span
+                    >
+                </h1>
+                <p class="hero-desc">
+                    Creative Director & Designer bridging the gap between
+                    high-end aesthetics and clean, immersive interaction
+                    development.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#about" class="btn-primary">Explore More</a>
+                    <a href="#contact" class="btn-secondary"
+                        >Let's Work Together</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- About Identity Section -->
+        <section class="about reveal-section" id="about">
+            <div class="about-visual reveal-item" style="--reveal-delay: 0.1s;">
+                <div class="about-slideshow">
+                    <picture>
+                        <source
+                            srcset="/Assets/home/about_placeholder.webp"
+                            type="image/webp"
+                        />
+                        <img
+                            src="/Assets/home/about_placeholder.webp"
+                            alt="Ezzy Razman Creative Director"
+                            class="slide-img active"
+                            width="600"
+                            height="800"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </picture>
+                    <picture>
+                        <source
+                            srcset="/Assets/home/about_placeholder_2.webp"
+                            type="image/webp"
+                        />
+                        <img
+                            src="/Assets/home/about_placeholder_2.webp"
+                            alt="Multimedia Workspace Design"
+                            class="slide-img"
+                            width="600"
+                            height="800"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </picture>
+                    <picture>
+                        <source
+                            srcset="/Assets/home/about_placeholder_3.webp"
+                            type="image/webp"
+                        />
+                        <img
+                            src="/Assets/home/about_placeholder_3.webp"
+                            alt="Digital Creator Process"
+                            class="slide-img"
+                            width="600"
+                            height="800"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </picture>
+                </div>
+                <div class="about-visual-overlay"></div>
+            </div>
+
+            <div class="about-container">
+                <div class="about-spacer"></div>
+                <div class="about-info">
+                    <span
+                        class="about-badge reveal-item"
+                        style="--reveal-delay: 0.2s;">01 | About Ezzy</span
+                    >
+                    <h2
+                        class="about-title reveal-item"
+                        style="--reveal-delay: 0.3s;"
+                    >
+                        JUST A MAN, <br class="desktop-only" />WITH <span
+                            class="highlight text-glow">BIG DREAMS.</span
+                        >
+                    </h2>
+                    <p
+                        class="about-desc reveal-item"
+                        style="--reveal-delay: 0.4s;"
+                    >
+                        Hi! I'm Ezzy, a creative multimedia designer driven by a
+                        passion to keep growing and pushing the limits of my
+                        craft. My creative journey began at the age of 15 when I
+                        first discovered the world of video editing — and I’ve
+                        been hooked ever since. Today, as a creative multimedia
+                        expert with over four years of experience in the
+                        creative industry, I’ve collaborated with multiple
+                        companies, bringing ideas to life through design and
+                        storytelling. I specialise in video editing, motion
+                        graphics, UI/UX, and visual effects. My goal? To become
+                        one of the best creators out there and inspire others!
+                    </p>
+                    <div
+                        class="about-actions reveal-item"
+                        style="--reveal-delay: 0.5s;"
+                    >
+                        <a
+                            href="https://drive.google.com/file/d/1SLKVZX9aAj9EnKf2xjc5VWCy3XPJVLQT/view?usp=share_link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn-primary"
+                            aria-label="Download Resume">Resume</a
+                        >
+                        <a
+                            href="https://www.linkedin.com/in/ezzy-razman-01934a2a9/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn-secondary"
+                            aria-label="Visit LinkedIn Profile">LinkedIn</a
+                        >
+                        <a
+                            href="/more-about-me.html"
+                            class="btn-text"
+                            aria-label="Read more about me"
+                            >More about me <span class="arrow">→</span></a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio reveal-section" id="portfolio">
+            <div class="portfolio-header">
+                <span
+                    class="about-badge reveal-item"
+                    style="--reveal-delay: 0.1s;">02 | PORTFOLIO</span
+                >
+                <h2
+                    class="portfolio-title reveal-item"
+                    style="--reveal-delay: 0.2s;"
+                >
+                    IMAGINATIVE WORK, <br />CREATED AS <span
+                        class="highlight text-glow">REALITY.</span
+                    >
+                </h2>
+            </div>
+
+            <!-- Subsection 1: Worked With -->
+            <div
+                class="portfolio-clients reveal-item"
+                style="--reveal-delay: 0.3s;"
+            >
+                <p class="clients-subtitle">
+                    COLLABORATED WITH INDUSTRY BRANDS
+                </p>
+                <div class="clients-grid">
+                    <div class="client-item" aria-label="Hikayat Fandom">
+                        <img
+                            src="/Assets/home/Hikayat Fandom logo.svg"
+                            alt="Hikayat Fandom"
+                            class="client-logo"
+                            style="height: 48px;"
+                            width="140"
+                            height="48"
+                            loading="lazy"
+                        />
+                        <span class="client-tooltip">Hikayat Fandom</span>
+                    </div>
+                    <div
+                        class="client-item"
+                        aria-label="Malaysian Youth Performing Arts Club"
+                    >
+                        <img
+                            src="/Assets/home/MYPAC Logo.svg"
+                            alt="Malaysian Youth Performing Arts Club"
+                            class="client-logo"
+                            width="140"
+                            height="48"
+                            loading="lazy"
+                        />
+                        <span class="client-tooltip"
+                            >Malaysian Youth Performing Arts Club</span
+                        >
+                    </div>
+                    <div class="client-item" aria-label="Keira Works">
+                        <img
+                            src="/Assets/home/Keira Works Logo.svg"
+                            alt="Keira Works"
+                            class="client-logo"
+                            width="140"
+                            height="48"
+                            loading="lazy"
+                        />
+                        <span class="client-tooltip">Keira Works</span>
+                    </div>
+                    <div class="client-item" aria-label="Havarri Akh. Bhd.">
+                        <img
+                            src="/Assets/home/Havarri Logo.svg"
+                            alt="Havarri Akh. Bhd."
+                            class="client-logo"
+                            width="140"
+                            height="48"
+                            loading="lazy"
+                        />
+                        <span class="client-tooltip">Havarri Akh. Bhd.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subsection 2: Highlighted Work Carousel -->
+            <div
+                class="featured-panel-wrapper reveal-item"
+                style="--reveal-delay: 0.4s;"
+            >
+                <div class="portfolio-featured">
+                    <div class="featured-header">
+                        <h3 class="subsection-title">FEATURED CREATIONS</h3>
+                        <div class="carousel-controls">
+                            <button
+                                class="btn-carousel"
+                                id="prevWorkBtn"
+                                aria-label="Previous Featured Work"
+                                disabled
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="20"
+                                    height="20"
+                                    stroke="currentColor"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                >
+                                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                                    <polyline points="12 19 5 12 12 5"
+                                    ></polyline>
+                                </svg>
+                            </button>
+                            <button
+                                class="btn-carousel"
+                                id="nextWorkBtn"
+                                aria-label="Next Featured Work"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="20"
+                                    height="20"
+                                    stroke="currentColor"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                >
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"
+                                    ></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="featured-carousel-wrapper">
+                        <div class="featured-track" id="featuredTrack">
+                            <!-- Card 1: EPIC X MYPAC OPENING -->
+                            <a
+                                href="/cinematic-motion.html"
+                                class="featured-card"
+                                role="group"
+                                aria-roledescription="slide"
+                                aria-label="1 of 4: EPIC X MYPAC OPENING"
+                            >
+                                <picture>
+                                    <source
+                                        srcset="/Assets/home/featured_1.webp"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="/Assets/home/featured_1.webp"
+                                        alt="Cybernetic Helmet Model"
+                                        class="featured-img"
+                                        width="500"
+                                        height="600"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                </picture>
+                                <div class="featured-overlay"></div>
+                                <div class="featured-info">
+                                    <span class="featured-tag"
+                                        >CINEMATIC MOTION // 3D MOTION</span
+                                    >
+                                    <h4 class="featured-card-title">
+                                        EPIC X MYPAC OPENING
+                                    </h4>
+                                </div>
+                            </a>
+
+                            <!-- Card 2: MALAYSIA FESTIVAL 2025 -->
+                            <a
+                                href="/cinematic-visual.html"
+                                class="featured-card"
+                                role="group"
+                                aria-roledescription="slide"
+                                aria-label="2 of 4: MALAYSIA FESTIVAL 2025"
+                            >
+                                <picture>
+                                    <source
+                                        srcset="/Assets/home/featured_2.webp"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="/Assets/home/featured_2.webp"
+                                        alt="High-tech sneaker CGI advertisement"
+                                        class="featured-img"
+                                        width="500"
+                                        height="600"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                </picture>
+                                <div class="featured-overlay"></div>
+                                <div class="featured-info">
+                                    <span class="featured-tag"
+                                        >CINEMATIC VISUAL // VIDEOGRAPHY</span
+                                    >
+                                    <h4 class="featured-card-title">
+                                        MALAYSIA FESTIVAL 2025
+                                    </h4>
+                                </div>
+                            </a>
+
+                            <!-- Card 3: ELDETHOS -->
+                            <a
+                                href="/digital-form.html"
+                                class="featured-card"
+                                role="group"
+                                aria-roledescription="slide"
+                                aria-label="3 of 4: ELDETHOS: ROMANCE OF THE FLAGBEARERS"
+                            >
+                                <picture>
+                                    <source
+                                        srcset="/Assets/home/featured_3.webp"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="/Assets/home/featured_3.webp"
+                                        alt="Aesthetic retro-wave geometric portal"
+                                        class="featured-img"
+                                        width="500"
+                                        height="600"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                </picture>
+                                <div class="featured-overlay"></div>
+                                <div class="featured-info">
+                                    <span class="featured-tag"
+                                        >DIGITAL FORM // 3D ANIMATION</span
+                                    >
+                                    <h4 class="featured-card-title">
+                                        ELDETHOS: ROMANCE OF THE FLAGBEARERS
+                                    </h4>
+                                </div>
+                            </a>
+
+                            <!-- Card 4: KUALA LUMPUR AFTER DARK -->
+                            <a
+                                href="/cinematic-visual.html"
+                                class="featured-card"
+                                role="group"
+                                aria-roledescription="slide"
+                                aria-label="4 of 4: KUALA LUMPUR AFTER DARK"
+                            >
+                                <picture>
+                                    <source
+                                        srcset="/Assets/home/featured_4.webp"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="/Assets/home/featured_4.webp"
+                                        alt="Music application UI design screens"
+                                        class="featured-img"
+                                        width="500"
+                                        height="600"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                </picture>
+                                <div class="featured-overlay"></div>
+                                <div class="featured-info">
+                                    <span class="featured-tag"
+                                        >CINEMATIC VISUAL // MONTAGE</span
+                                    >
+                                    <h4 class="featured-card-title">
+                                        KUALA LUMPUR AFTER DARK
+                                    </h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-progress-container">
+                        <div
+                            class="carousel-progress-bar"
+                            id="carouselProgressBar"
+                        >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subsection 3: Portfolio Divisions (Categories) -->
+            <div
+                class="portfolio-categories reveal-item"
+                style="--reveal-delay: 0.5s;"
+            >
+                <h3 class="subsection-title text-center text-glow">
+                    PORTFOLIO PAGES
+                </h3>
+                <div class="categories-grid">
+                    <!-- Card A: Cinematic Visual -->
+                    <a
+                        href="/cinematic-visual.html"
+                        class="category-card"
+                        aria-label="Explore Cinematic Visual portfolio"
+                    >
+                        <picture>
+                            <source
+                                srcset="/Assets/home/cat_visual.webp"
+                                type="image/webp"
+                            />
+                            <img
+                                src="/Assets/home/cat_visual.webp"
+                                alt="Cinematic camera lenses and film production set"
+                                class="cat-card-bg"
+                                width="400"
+                                height="500"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </picture>
+                        <div class="cat-card-overlay"></div>
+                        <div class="cat-card-info">
+                            <h4 class="cat-card-title">Cinematic Visual</h4>
+                            <p class="cat-card-desc">
+                                Photography, videography, and editing
+                            </p>
+                            <div class="cat-card-arrow">
+                                <span class="arrow-line"></span>
+                                <span class="arrow-head">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card B: Design & Identity -->
+                    <a
+                        href="/design-identity.html"
+                        class="category-card"
+                        aria-label="Explore Design and Identity portfolio"
+                    >
+                        <picture>
+                            <source
+                                srcset="/Assets/home/cat_design.webp"
+                                type="image/webp"
+                            />
+                            <img
+                                src="/Assets/home/cat_design.webp"
+                                alt="Graphic branding guidelines and poster design frame"
+                                class="cat-card-bg"
+                                width="400"
+                                height="500"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </picture>
+                        <div class="cat-card-overlay"></div>
+                        <div class="cat-card-info">
+                            <h4 class="cat-card-title">Design & Identity</h4>
+                            <p class="cat-card-desc">
+                                Graphic and Identity Design
+                            </p>
+                            <div class="cat-card-arrow">
+                                <span class="arrow-line"></span>
+                                <span class="arrow-head">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card C: Cinematic Motion -->
+                    <a
+                        href="/cinematic-motion.html"
+                        class="category-card"
+                        aria-label="Explore Cinematic Motion portfolio"
+                    >
+                        <picture>
+                            <source
+                                srcset="/Assets/home/cat_motion.webp"
+                                type="image/webp"
+                            />
+                            <img
+                                src="/Assets/home/cat_motion.webp"
+                                alt="Fluid wave simulations timeline"
+                                class="cat-card-bg"
+                                width="400"
+                                height="500"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </picture>
+                        <div class="cat-card-overlay"></div>
+                        <div class="cat-card-info">
+                            <h4 class="cat-card-title">Cinematic Motion</h4>
+                            <p class="cat-card-desc">
+                                Motion Graphic & Visual Effects
+                            </p>
+                            <div class="cat-card-arrow">
+                                <span class="arrow-line"></span>
+                                <span class="arrow-head">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card D: Digital Form -->
+                    <a
+                        href="/digital-form.html"
+                        class="category-card"
+                        aria-label="Explore Digital Form portfolio"
+                    >
+                        <picture>
+                            <source
+                                srcset="/Assets/home/cat_form.webp"
+                                type="image/webp"
+                            />
+                            <img
+                                src="/Assets/home/cat_form.webp"
+                                alt="3D wireframe spheres and neon matrix"
+                                class="cat-card-bg"
+                                width="400"
+                                height="500"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </picture>
+                        <div class="cat-card-overlay"></div>
+                        <div class="cat-card-info">
+                            <h4 class="cat-card-title">Digital Form</h4>
+                            <p class="cat-card-desc">
+                                3D modelling & Animation
+                            </p>
+                            <div class="cat-card-arrow">
+                                <span class="arrow-line"></span>
+                                <span class="arrow-head">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card E: Web Motion -->
+                    <a
+                        href="/web-motion.html"
+                        class="category-card"
+                        aria-label="Explore Web Motion portfolio"
+                    >
+                        <picture>
+                            <source
+                                srcset="/Assets/home/cat_web.webp"
+                                type="image/webp"
+                            />
+                            <img
+                                src="/Assets/home/cat_web.webp"
+                                alt="Sleek glassmorphism website interfaces"
+                                class="cat-card-bg"
+                                width="400"
+                                height="500"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </picture>
+                        <div class="cat-card-overlay"></div>
+                        <div class="cat-card-info">
+                            <h4 class="cat-card-title">Web Motion</h4>
+                            <p class="cat-card-desc">UI/UX & Web Design</p>
+                            <div class="cat-card-arrow">
+                                <span class="arrow-line"></span>
+                                <span class="arrow-head">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card F: Printed Work -->
+                    <a
+                        href="/printed-work.html"
+                        class="category-card"
+                        aria-label="Explore Printed Work portfolio"
+                    >
+                        <picture>
+                            <source
+                                srcset="/Assets/home/cat_print.webp"
+                                type="image/webp"
+                            />
+                            <img
+                                src="/Assets/home/cat_print.webp"
+                                alt="Typography magazine layout printing mockup"
+                                class="cat-card-bg"
+                                width="400"
+                                height="500"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </picture>
+                        <div class="cat-card-overlay"></div>
+                        <div class="cat-card-info">
+                            <h4 class="cat-card-title">Printed Work</h4>
+                            <p class="cat-card-desc">Publication & Printing</p>
+                            <div class="cat-card-arrow">
+                                <span class="arrow-line"></span>
+                                <span class="arrow-head">→</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact reveal-section" id="contact">
+            <div class="contact-container">
+                <div
+                    class="contact-info-block reveal-item"
+                    style="--reveal-delay: 0.1s;"
+                >
+                    <span class="about-badge">03 | CONNECTION</span>
+                    <h2 class="contact-title">
+                        LET'S BUILD <br />SOMETHING <span
+                            class="highlight text-glow">EXTRAORDINARY.</span
+                        >
+                    </h2>
+                    <p class="contact-desc">
+                        Have an idea, project, or collaboration in mind? Feel
+                        free to reach out directly or connect with me via my
+                        socials!
+                    </p>
+
+                    <div class="direct-contact-cards">
+                        <a href="tel:+60172292205" class="direct-card">
+                            <div class="direct-icon-wrapper">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="20"
+                                    height="20"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="direct-details">
+                                <span class="direct-label">Call / WhatsApp</span
+                                >
+                                <span class="direct-value">+60172292205</span>
+                            </div>
+                        </a>
+
+                        <a
+                            href="mailto:izzukail.raz@gmail.com"
+                            class="direct-card"
+                        >
+                            <div class="direct-icon-wrapper">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="20"
+                                    height="20"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                    ></path>
+                                    <polyline points="22,6 12,13 2,6"
+                                    ></polyline>
+                                </svg>
+                            </div>
+                            <div class="direct-details">
+                                <span class="direct-label">Send Email</span>
+                                <span class="direct-value"
+                                    >izzukail.raz@gmail.com</span
+                                >
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="contact-socials-block reveal-item"
+                    style="--reveal-delay: 0.3s;"
+                >
+                    <h3 class="subsection-title">DIRECT CONNECTION</h3>
+                    <div class="socials-grid">
+                        <div class="social-card instagram-card">
+                            <div class="social-icon-box">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <rect
+                                        x="2"
+                                        y="2"
+                                        width="20"
+                                        height="20"
+                                        rx="5"
+                                        ry="5"></rect>
+                                    <path
+                                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                                    ></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"
+                                    ></line>
+                                </svg>
+                            </div>
+                            <div class="social-card-info">
+                                <span class="social-platform">Instagram</span>
+                                <span class="social-handle">@ezzy_razman</span>
+                            </div>
+                            <a
+                                href="https://www.instagram.com/ezzy_razman/"
+                                class="btn-social-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Visit Instagram Profile"
+                            >
+                                <span>Connect</span>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="16"
+                                    height="16"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    fill="none"
+                                >
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"
+                                    ></polyline>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="social-card youtube-card">
+                            <div class="social-icon-box">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
+                                    ></path>
+                                    <polygon
+                                        points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+                                    ></polygon>
+                                </svg>
+                            </div>
+                            <div class="social-card-info">
+                                <span class="social-platform">YouTube</span>
+                                <span class="social-handle">ezzyeasy</span>
+                            </div>
+                            <a
+                                href="https://www.youtube.com/@ezzyeasy04"
+                                class="btn-social-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Visit YouTube Channel"
+                            >
+                                <span>Watch</span>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="16"
+                                    height="16"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    fill="none"
+                                >
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"
+                                    ></polyline>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="social-card behance-card">
+                            <div class="social-icon-box">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M8.22 17.53c1.29 0 2.37-.32 3.22-.96.86-.64 1.29-1.65 1.29-3.04 0-1.12-.3-2.01-.91-2.67-.61-.66-1.46-.99-2.54-1h3.19V8.62H2.33v8.91h5.89zm-2.89-6.38h2.64c.56 0 1 .11 1.3.33.3.22.45.57.45 1.05 0 .44-.14.77-.42.99-.28.22-.72.33-1.33.33H5.33v-2.7zm0 4.14h2.89c.64 0 1.13.12 1.46.36.33.24.5.64.5 1.2 0 .52-.16.91-.49 1.17-.33.26-.85.39-1.57.39H5.33v-3.12zm13.17-5.07c-1.19 0-2.14.35-2.86 1.05-.72.7-1.08 1.69-1.08 2.97 0 1.26.35 2.24 1.05 2.93.7.69 1.63 1.03 2.78 1.03 1.07 0 1.95-.29 2.65-.87.7-.58 1.07-1.4 1.1-2.46h-2.31c-.04.44-.19.78-.45 1.02-.26.24-.65.36-1.17.36-.45 0-.8-.13-1.05-.39-.25-.26-.39-.67-.42-1.23h5.45c.03-.17.05-.41.05-.72 0-1.25-.34-2.22-1.02-2.92-.68-.7-1.61-1.05-2.77-1.05zm-1.02 3.12c.04-.45.18-.8.42-1.05.24-.25.59-.38 1.05-.38.44 0 .78.13 1 .39.22.26.34.61.37 1.04h-2.84zm.44-5.38h4.5v1.2h-4.5z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="social-card-info">
+                                <span class="social-platform">Behance</span>
+                                <span class="social-handle">Ezzy Razman</span>
+                            </div>
+                            <a
+                                href="https://www.behance.net/ezzyeasy"
+                                class="btn-social-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Visit Behance Portfolio"
+                            >
+                                <span>Explore</span>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="16"
+                                    height="16"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    fill="none"
+                                >
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"
+                                    ></polyline>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="social-card linkedin-card">
+                            <div class="social-icon-box">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="social-card-info">
+                                <span class="social-platform">LinkedIn</span>
+                                <span class="social-handle">Ezzy Razman</span>
+                            </div>
+                            <a
+                                href="https://www.linkedin.com/in/ezzy-razman-01934a2a9/"
+                                class="btn-social-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Visit LinkedIn Profile"
+                            >
+                                <span>Connect</span>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="16"
+                                    height="16"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    fill="none"
+                                >
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"
+                                    ></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</BaseLayout>
+
+<script>
+    // Home Page Specific Interactions: About Slideshow & Carousel
+    document.addEventListener("DOMContentLoaded", () => {
+        // About Slideshow
+        const slides = document.querySelectorAll(".about-slideshow .slide-img");
+        if (slides.length > 0) {
+            let currentSlide = 0;
+            setInterval(() => {
+                slides[currentSlide].classList.remove("active");
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add("active");
+            }, 4000);
+        }
+
+        // Featured Track Carousel
+        const track = document.getElementById("featuredTrack") as HTMLElement;
+        const prevBtn = document.getElementById(
+            "prevWorkBtn",
+        ) as HTMLButtonElement;
+        const nextBtn = document.getElementById(
+            "nextWorkBtn",
+        ) as HTMLButtonElement;
+        const progressBar = document.getElementById(
+            "carouselProgressBar",
+        ) as HTMLElement;
+
+        if (track && prevBtn && nextBtn && progressBar) {
+            const updateControls = () => {
+                const maxScroll = track.scrollWidth - track.clientWidth;
+                const percentage =
+                    maxScroll > 0 ? (track.scrollLeft / maxScroll) * 100 : 0;
+                progressBar.style.width = `${25 + percentage * 0.75}%`;
+                prevBtn.disabled = track.scrollLeft <= 5;
+                nextBtn.disabled = track.scrollLeft >= maxScroll - 5;
+            };
+
+            nextBtn.addEventListener("click", () => {
+                const card = track.querySelector(
+                    ".featured-card",
+                ) as HTMLElement;
+                if (card) {
+                    const stepWidth = card.clientWidth + 32;
+                    track.scrollBy({ left: stepWidth, behavior: "smooth" });
+                }
+            });
+
+            prevBtn.addEventListener("click", () => {
+                const card = track.querySelector(
+                    ".featured-card",
+                ) as HTMLElement;
+                if (card) {
+                    const stepWidth = card.clientWidth + 32;
+                    track.scrollBy({ left: -stepWidth, behavior: "smooth" });
+                }
+            });
+
+            track.addEventListener("scroll", updateControls, { passive: true });
+            window.addEventListener("resize", updateControls, {
+                passive: true,
+            });
+            updateControls();
+        }
+    });
+</script>

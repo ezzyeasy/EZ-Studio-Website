@@ -1,0 +1,603 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroSlideshow from "../components/HeroSlideshow.astro";
+import "../styles/design-identity.css";
+
+const heroImages = [
+    "/Assets/design/Poster_1.webp",
+    "/Assets/design/Identity_1.webp",
+    "/Assets/design/Poster_2.webp",
+    "/Assets/design/Identity_2.webp",
+    "/Assets/design/Poster_5.webp",
+    "/Assets/design/Poster_6.webp",
+    "/Assets/design/Identity_3.webp",
+];
+---
+
+<BaseLayout
+    title="Design & Identity | EZ Studio"
+    description="Explore brand identity design, minimalist logomarks, and typographic poster artworks by Ezzy Razman."
+    currentPath="/design-identity.html"
+>
+    <main class="main-content">
+        <!-- Portfolio Hero Section -->
+        <section class="portfolio-hero reveal-section">
+            <HeroSlideshow images={heroImages} />
+
+            <!-- Interactive Grid Overlay & Ambient Glow -->
+            <div class="hero-grid-overlay"></div>
+            <div
+                class="hero-ambient-glow"
+                style="background: radial-gradient(circle at center, rgba(0, 255, 255, 0.15) 0%, transparent 60%);"
+            >
+            </div>
+
+            <div class="portfolio-hero-content">
+                <span class="portfolio-badge"
+                    >DIVISION 02 // DESIGN & IDENTITY</span
+                >
+                <h1 class="portfolio-hero-title">
+                    <span class="word" style="--i: 1;">SHAPING</span>
+                    <span class="word" style="--i: 2;">BRANDS,</span>
+                    <br class="desktop-only" />
+                    <span class="word" style="--i: 3;">DEFINING</span>
+                    <span class="word highlight text-glow" style="--i: 4;"
+                        >IDENTITY.</span
+                    >
+                </h1>
+                <p class="portfolio-hero-desc">
+                    Creating bespoke visual systems, minimal typography
+                    layovers, and cohesive brand standards. Blending graphic
+                    precision with strong functional conceptualism.
+                </p>
+            </div>
+            <div class="scroll-prompt">
+                <span class="scroll-text">SCROLL TO EXPLORE</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- Posters Gallery Section -->
+        <section class="cinematic-videos-section reveal-section" id="posters">
+            <div class="portfolio-container">
+                <span
+                    class="about-badge reveal-item"
+                    style="--reveal-delay: 0.1s;">01 | POSTER ARTWORKS</span
+                >
+                <h2
+                    class="section-title reveal-item"
+                    style="--reveal-delay: 0.2s;"
+                >
+                    TYPOGRAPHIC POSTER LAYERS<span class="highlight text-glow"
+                        >.</span
+                    >
+                </h2>
+
+                <div
+                    class="photography-grid posters-grid reveal-item"
+                    style="--reveal-delay: 0.3s;"
+                >
+                    <!-- Poster 1 -->
+                    <div
+                        class="photo-card poster-card"
+                        data-full-src="/Assets/design/Poster_1.webp"
+                        data-title="Vazhga Malaysia"
+                        data-specs="Invitation Poster // 21 x 29.7cm"
+                        data-location="Independence Day Theme"
+                    >
+                        <img
+                            src="/Assets/design/Poster_1-thumb.webp"
+                            alt="Vazhga Malaysia"
+                            class="photo-img"
+                            width="400"
+                            height="560"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">
+                                    Vazhga Malaysia
+                                </h3>
+                                <span class="photo-card-specs"
+                                    >Invitation Poster // 21 x 29.7cm</span
+                                >
+                                <span class="photo-card-location"
+                                    >Independence Day Theme</span
+                                >
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Poster 2 -->
+                    <div
+                        class="photo-card poster-card"
+                        data-full-src="/Assets/design/Poster_2.webp"
+                        data-title="Preserve The Brain"
+                        data-specs="Infographic Poster // 21 x 29.7cm"
+                        data-location="Dementia & Healthcare Concept"
+                    >
+                        <img
+                            src="/Assets/design/Poster_2-thumb.webp"
+                            alt="Preserve The Brain Poster"
+                            class="photo-img"
+                            width="400"
+                            height="560"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">
+                                    Preserve The Brain
+                                </h3>
+                                <span class="photo-card-specs"
+                                    >Infographic Poster // 21 x 29.7cm</span
+                                >
+                                <span class="photo-card-location"
+                                    >Dementia & Healthcare Concept</span
+                                >
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Poster 3 -->
+                    <div
+                        class="photo-card poster-card"
+                        data-full-src="/Assets/design/Poster_3.webp"
+                        data-title="Three Frenchmen and the Classic Pantun"
+                        data-specs="Promotional Poster // 21 x 29.7cm"
+                        data-location="French & Literacy Campaign"
+                    >
+                        <img
+                            src="/Assets/design/Poster_3-thumb.webp"
+                            alt="Three Frenchmen and the Classic Pantun"
+                            class="photo-img"
+                            width="400"
+                            height="560"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">
+                                    Three Frenchmen and the Classic Pantun
+                                </h3>
+                                <span class="photo-card-specs"
+                                    >Information Poster // 21 x 29.7cm</span
+                                >
+                                <span class="photo-card-location"
+                                    >French & Literacy Campaign</span
+                                >
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Poster 4 -->
+                    <div
+                        class="photo-card poster-card"
+                        data-full-src="/Assets/design/Poster_4.webp"
+                        data-title="Smart Grocery Shopping"
+                        data-specs="Infographic Poster // 21 x 29.7cm"
+                        data-location="Comic Infographic Concept"
+                    >
+                        <img
+                            src="/Assets/design/Poster_4-thumb.webp"
+                            alt="Smart Grocery Shopping"
+                            class="photo-img"
+                            width="400"
+                            height="560"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">
+                                    Smart Grocery Shopping
+                                </h3>
+                                <span class="photo-card-specs"
+                                    >Infographic Poster // 21 x 29.7cm</span
+                                >
+                                <span class="photo-card-location"
+                                    >Comic Infographic Concept</span
+                                >
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Poster 5 -->
+                    <div
+                        class="photo-card poster-card"
+                        data-full-src="/Assets/design/Poster_5.webp"
+                        data-title="Pokemon: Sync"
+                        data-specs="Movie Poster // 21 x 29.7cm"
+                        data-location="Hyperpop Comic Concept"
+                    >
+                        <img
+                            src="/Assets/design/Poster_5-thumb.webp"
+                            alt="Pokemon: Sync"
+                            class="photo-img"
+                            width="400"
+                            height="560"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">Pokemon: Sync</h3>
+                                <span class="photo-card-specs"
+                                    >Movie Poster // 21 x 29.7cm</span
+                                >
+                                <span class="photo-card-location"
+                                    >Hyperpop Comic Concept</span
+                                >
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Poster 6 -->
+                    <div
+                        class="photo-card poster-card"
+                        data-full-src="/Assets/design/Poster_6.webp"
+                        data-title="A Fan-Musical Based on: EPIC"
+                        data-specs="Musical Theatre Poster // 21 x 29.7cm"
+                        data-location="Full Illustration (by Zati Liyana) | Graphic Render"
+                    >
+                        <img
+                            src="/Assets/design/Poster_6-thumb.webp"
+                            alt="A Fan-Musical Based on: EPIC"
+                            class="photo-img"
+                            width="400"
+                            height="560"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">
+                                    A Fan-Musical Based on: EPIC
+                                </h3>
+                                <span class="photo-card-specs"
+                                    >Musical Theatre Poster // 21 x 29.7cm</span
+                                >
+                                <span class="photo-card-location"
+                                    >Full Illustration (by Zati Liyana)</span
+                                >
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Logos Section -->
+        <section
+            class="cinematic-videos-section reveal-section"
+            id="logos"
+            style="border-top: 1px solid rgba(255, 255, 255, 0.03);"
+        >
+            <div class="portfolio-container">
+                <span
+                    class="about-badge reveal-item"
+                    style="--reveal-delay: 0.1s;">02 | LOGOMARKS</span
+                >
+                <h2
+                    class="section-title reveal-item"
+                    style="--reveal-delay: 0.2s;"
+                >
+                    MINIMALIST BRAND MARKS<span class="highlight text-glow"
+                        >.</span
+                    >
+                </h2>
+
+                <div
+                    class="logos-grid reveal-item"
+                    style="--reveal-delay: 0.3s;"
+                >
+                    <div class="logo-display-card">
+                        <img
+                            src="/Assets/design/Logo_1.svg"
+                            alt="Lyn's Little Kitchen Logo"
+                            class="logo-display-img"
+                            width="200"
+                            height="120"
+                            loading="lazy"
+                        />
+                        <div class="logo-overlay">
+                            <h3 class="logo-card-title">
+                                Lyn's Little Kitchen
+                            </h3>
+                            <span class="logo-card-tag">Bakery</span>
+                        </div>
+                    </div>
+
+                    <div class="logo-display-card">
+                        <img
+                            src="/Assets/design/Logo_2.svg"
+                            alt="Keira Works Logo"
+                            class="logo-display-img"
+                            width="200"
+                            height="120"
+                            loading="lazy"
+                        />
+                        <div class="logo-overlay">
+                            <h3 class="logo-card-title">Keira Works</h3>
+                            <span class="logo-card-tag">Full Stack Studio</span>
+                        </div>
+                    </div>
+
+                    <div class="logo-display-card">
+                        <img
+                            src="/Assets/design/Logo_3.svg"
+                            alt="EZ Studio Logo"
+                            class="logo-display-img"
+                            width="200"
+                            height="120"
+                            loading="lazy"
+                        />
+                        <div class="logo-overlay">
+                            <h3 class="logo-card-title">EZ Studio</h3>
+                            <span class="logo-card-tag">Multimedia Studio</span>
+                        </div>
+                    </div>
+
+                    <div class="logo-display-card">
+                        <img
+                            src="/Assets/design/Logo_4.svg"
+                            alt="MYPAC Logo"
+                            class="logo-display-img"
+                            width="200"
+                            height="120"
+                            loading="lazy"
+                        />
+                        <div class="logo-overlay">
+                            <h3 class="logo-card-title">
+                                Malaysian Youth Performance Arts Club
+                            </h3>
+                            <span class="logo-card-tag">Theatre Club</span>
+                        </div>
+                    </div>
+
+                    <div class="logo-display-card">
+                        <img
+                            src="/Assets/design/Logo_5.svg"
+                            alt="Shelterlab Logo"
+                            class="logo-display-img"
+                            width="200"
+                            height="120"
+                            loading="lazy"
+                        />
+                        <div class="logo-overlay">
+                            <h3 class="logo-card-title">Shelterlab</h3>
+                            <span class="logo-card-tag">Online Startup</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Identity Section -->
+        <section
+            class="photography-section reveal-section"
+            id="identity"
+            style="border-top: 1px solid rgba(255, 255, 255, 0.03);"
+        >
+            <div class="portfolio-container">
+                <span
+                    class="about-badge reveal-item"
+                    style="--reveal-delay: 0.1s;"
+                    >03 | BEHANCE CASE STUDIES</span
+                >
+                <h2
+                    class="section-title reveal-item"
+                    style="--reveal-delay: 0.2s;"
+                >
+                    INTEGRATED BRAND SYSTEMS<span class="highlight text-glow"
+                        >.</span
+                    >
+                </h2>
+
+                <div class="identity-showcase-list">
+                    <!-- Project 1 -->
+                    <div
+                        class="identity-showcase-item reveal-item"
+                        style="--reveal-delay: 0.3s;"
+                    >
+                        <div class="identity-mockup-container">
+                            <img
+                                src="/Assets/design/Identity_1.webp"
+                                alt="Lyn's Little Kitchen Mockup"
+                                class="identity-mockup"
+                                width="550"
+                                height="380"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </div>
+                        <div class="identity-info-content">
+                            <span class="identity-tag"
+                                >Bakery // Product Design</span
+                            >
+                            <h3 class="identity-title">Lyn's Little Kitchen</h3>
+                            <p class="identity-description">
+                                Departing from trendy, overly decorative
+                                aesthetics, the brand embraces a clean,
+                                sophisticated visual identity centered on a
+                                refined monochromatic palette.
+                            </p>
+                            <div class="scope-details-group">
+                                <h4 class="scope-title">
+                                    PROJECT DELIVERABLES
+                                </h4>
+                                <div class="scope-pills">
+                                    <span class="scope-pill"
+                                        >Logomark Design</span
+                                    >
+                                    <span class="scope-pill"
+                                        >Brand Guidebook</span
+                                    >
+                                    <span class="scope-pill">3D Packaging</span>
+                                    <span class="scope-pill">Mockups</span>
+                                </div>
+                            </div>
+                            <a
+                                href="https://www.behance.net/gallery/253553897/Product-Branding-Lyns-Little-Kitchen"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="behance-link-btn"
+                            >
+                                <span>Explore on Behance</span>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="16"
+                                    height="16"
+                                    stroke="currentColor"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                >
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"
+                                    ></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div
+                        class="identity-showcase-item reveal-item"
+                        style="--reveal-delay: 0.4s;"
+                    >
+                        <div class="identity-mockup-container">
+                            <img
+                                src="/Assets/design/Identity_2.webp"
+                                alt="EZ Studio Brandbook Mockup"
+                                class="identity-mockup"
+                                width="550"
+                                height="380"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </div>
+                        <div class="identity-info-content">
+                            <span class="identity-tag"
+                                >Multimedia Studio // Brandbook</span
+                            >
+                            <h3 class="identity-title">EZ Studio Brandbook</h3>
+                            <p class="identity-description">
+                                A comprehensive brand guide detailing the core
+                                philosophy, visual systems, and application
+                                standards for EZ Studio.
+                            </p>
+                            <div class="scope-details-group">
+                                <h4 class="scope-title">
+                                    PROJECT DELIVERABLES
+                                </h4>
+                                <div class="scope-pills">
+                                    <span class="scope-pill"
+                                        >Logomark Design</span
+                                    >
+                                    <span class="scope-pill">Brand System</span>
+                                    <span class="scope-pill">Guidelines</span>
+                                </div>
+                            </div>
+                            <a
+                                href="https://www.behance.net/gallery/253076207/Branding-Identity-EZ-Studio-Brandbook"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="behance-link-btn"
+                            >
+                                <span>Explore on Behance</span>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="16"
+                                    height="16"
+                                    stroke="currentColor"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                >
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"
+                                    ></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div
+                        class="identity-showcase-item reveal-item"
+                        style="--reveal-delay: 0.5s;"
+                    >
+                        <div class="identity-mockup-container">
+                            <img
+                                src="/Assets/design/Identity_3.webp"
+                                alt="Melto Visual System Mockup"
+                                class="identity-mockup"
+                                width="550"
+                                height="380"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </div>
+                        <div class="identity-info-content">
+                            <span class="identity-tag"
+                                >Dessert // Typography & Branding Identity</span
+                            >
+                            <h3 class="identity-title">Melto</h3>
+                            <p class="identity-description">
+                                Developing a dessert cafe brand identity
+                                utilizing bold geometric layout matrices, heavy
+                                pink/cherry color accents, and customized layout
+                                layouts for print media.
+                            </p>
+                            <div class="scope-details-group">
+                                <h4 class="scope-title">
+                                    PROJECT DELIVERABLES
+                                </h4>
+                                <div class="scope-pills">
+                                    <span class="scope-pill"
+                                        >Logomark Design</span
+                                    >
+                                    <span class="scope-pill"
+                                        >Brand Guidebook</span
+                                    >
+                                    <span class="scope-pill"
+                                        >Packaging Design</span
+                                    >
+                                    <span class="scope-pill">Mockups</span>
+                                </div>
+                            </div>
+                            <a
+                                href="https://www.behance.net/gallery/228800891/Typography-Branding-Identity-Melto"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="behance-link-btn"
+                            >
+                                <span>Explore on Behance</span>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="16"
+                                    height="16"
+                                    stroke="currentColor"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                >
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"
+                                    ></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</BaseLayout>

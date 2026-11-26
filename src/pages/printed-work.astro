@@ -1,0 +1,229 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSlideshow from '../components/HeroSlideshow.astro';
+import '../styles/printed-work.css';
+
+const heroImages = [
+  '/Assets/printed/printed_1.webp',
+  '/Assets/printed/printed_2.webp',
+  '/Assets/printed/printed_3.webp',
+  '/Assets/printed/printed_4.webp',
+  '/Assets/printed/printed_5.webp',
+  '/Assets/printed/printed_6.webp'
+];
+---
+
+<BaseLayout
+  title="Printed Work | EZ Studio"
+  description="Explore editorial book design, typography journals, and publication printing by Ezzy Razman."
+  currentPath="/printed-work.html"
+>
+    <main class="main-content">
+        <!-- Portfolio Hero Section -->
+        <section class="portfolio-hero reveal-section">
+            <HeroSlideshow images={heroImages} />
+
+            <!-- Interactive Grid Overlay & Ambient Glow -->
+            <div class="hero-grid-overlay"></div>
+            <div class="hero-ambient-glow" style="background: radial-gradient(circle at center, rgba(0, 255, 255, 0.15) 0%, transparent 60%);"></div>
+
+            <div class="portfolio-hero-content">
+                <span class="portfolio-badge">DIVISION 06 // PRINTED WORK</span>
+                <h1 class="portfolio-hero-title">
+                    <span class="word" style="--i: 1;">TANGIBLE</span>
+                    <span class="word" style="--i: 2;">GRAPHICS,</span> <br class="desktop-only">
+                    <span class="word" style="--i: 3;">ART</span>
+                    <span class="word" style="--i: 4;">IN</span>
+                    <span class="word highlight text-glow" style="--i: 5;">PRINT.</span>
+                </h1>
+                <p class="portfolio-hero-desc">
+                    Designing creative magazine layouts, typographic books, and tactile paper materials.
+                    Merging traditional prepress methods with contemporary visual systems.
+                </p>
+            </div>
+            <div class="scroll-prompt">
+                <span class="scroll-text">SCROLL TO EXPLORE</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- Editorial Print Section -->
+        <section class="cinematic-videos-section reveal-section" id="print-project">
+            <div class="portfolio-container">
+                <span class="about-badge reveal-item" style="--reveal-delay: 0.1s;">01 | EDITORIAL BOOK</span>
+                <h2 class="section-title reveal-item" style="--reveal-delay: 0.2s;">
+                    FEATURED BOOK EDITORIAL DESIGN<span class="highlight text-glow">.</span>
+                </h2>
+
+                <div class="books-grid reveal-item" style="--reveal-delay: 0.3s;">
+                    <!-- Book 1 -->
+                    <a href="https://drive.google.com/file/d/1g4sWW_CGT-uN03ZvuzPo88Axvut2zo7g/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="book-card">
+                        <img src="/Assets/printed/printed_1.webp" alt="Writing on Film and Animation Cover" class="book-img" width="500" height="700" loading="lazy" decoding="async">
+                        <div class="book-overlay">
+                            <div class="book-info">
+                                <span class="book-category">UNIKL // WRITING JOURNAL</span>
+                                <h3 class="book-title">Writing on Film and Animation</h3>
+                                <p class="book-desc">
+                                    A premium journal for film and animation students to record their ideas,
+                                    inspirations, and reflections. This journal combines creative writing, and deep
+                                    research and exploration.
+                                </p>
+                                <div class="book-specs-group">
+                                    <span class="book-spec-pill">B5 Portrait</span>
+                                    <span class="book-spec-pill">Matte Paper</span>
+                                    <span class="book-spec-pill">Perfect Bind</span>
+                                </div>
+                                <div class="book-action-label">
+                                    <span>OPEN GOOGLE DRIVE</span>
+                                    <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Book 2 -->
+                    <a href="https://drive.google.com/file/d/1K5OvevM3rVZaWUvRrVlE3MQ7sfVSC3xY/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="book-card">
+                        <img src="/Assets/printed/printed_2.webp" alt="Film Journal Cover" class="book-img" width="500" height="700" loading="lazy" decoding="async">
+                        <div class="book-overlay">
+                            <div class="book-info">
+                                <span class="book-category">UNIKL // MOVIE JOURNAL</span>
+                                <h3 class="book-title">Film Journal</h3>
+                                <p class="book-desc">
+                                    A premium journal for film students to document their creative ideas, story ideas,
+                                    inspirations, and personal reflections.
+                                </p>
+                                <div class="book-specs-group">
+                                    <span class="book-spec-pill">B5 Portrait</span>
+                                    <span class="book-spec-pill">Matte Paper</span>
+                                    <span class="book-spec-pill">Perfect Bind</span>
+                                </div>
+                                <div class="book-action-label">
+                                    <span>OPEN GOOGLE DRIVE</span>
+                                    <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Book 3 -->
+                    <a href="https://drive.google.com/file/d/1MsDC3635s-Vp0W9vaQ-ObnwgScNgcZrE/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="book-card">
+                        <img src="/Assets/printed/printed_3.webp" alt="Chronicles of Typography Cover 1" class="book-img" width="500" height="700" loading="lazy" decoding="async">
+                        <div class="book-overlay">
+                            <div class="book-info">
+                                <span class="book-category">TYPOGRAPHY ESSAY // GRAPHICS</span>
+                                <h3 class="book-title">Chronicles of Typography</h3>
+                                <p class="book-desc">
+                                    An essay book analyzing mechanical typesetting, historical linotype methods, and the
+                                    transition of print layouts into modernist grid dynamics.
+                                </p>
+                                <div class="book-specs-group">
+                                    <span class="book-spec-pill">A5 Portrait</span>
+                                    <span class="book-spec-pill">Grid System</span>
+                                    <span class="book-spec-pill">Uncoated Paper</span>
+                                    <span class="book-spec-pill">Perfect Bound</span>
+                                </div>
+                                <div class="book-action-label">
+                                    <span>OPEN GOOGLE DRIVE</span>
+                                    <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Book 4 -->
+                    <a href="https://drive.google.com/file/d/1NvePigC6jDdO6NXtpXdXhm6chas3Y9mw/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="book-card">
+                        <img src="/Assets/printed/printed_4.webp" alt="Chronicles of Typography Cover 2" class="book-img" width="500" height="700" loading="lazy" decoding="async">
+                        <div class="book-overlay">
+                            <div class="book-info">
+                                <span class="book-category">TYPOGRAPHY ESSAY // GRAPHICS</span>
+                                <h3 class="book-title">Chronicles of Typography</h3>
+                                <p class="book-desc">
+                                    An essay book analyzing mechanical typesetting, historical linotype methods, and the
+                                    transition of print layouts into modernist grid dynamics.
+                                </p>
+                                <div class="book-specs-group">
+                                    <span class="book-spec-pill">A5 Portrait</span>
+                                    <span class="book-spec-pill">Grid System</span>
+                                    <span class="book-spec-pill">Uncoated Paper</span>
+                                    <span class="book-spec-pill">Perfect Bound</span>
+                                </div>
+                                <div class="book-action-label">
+                                    <span>OPEN GOOGLE DRIVE</span>
+                                    <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Book 5 -->
+                    <a href="https://drive.google.com/file/d/1J0cAwg1ZhpQVq5lBmvPN2Gzz4t8Zjuua/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="book-card">
+                        <img src="/Assets/printed/printed_5.webp" alt="Chronicles of Typography Cover 3" class="book-img" width="500" height="700" loading="lazy" decoding="async">
+                        <div class="book-overlay">
+                            <div class="book-info">
+                                <span class="book-category">TYPOGRAPHY ESSAY // GRAPHICS</span>
+                                <h3 class="book-title">Chronicles of Typography</h3>
+                                <p class="book-desc">
+                                    An essay book analyzing mechanical typesetting, historical linotype methods, and the
+                                    transition of print layouts into modernist grid dynamics.
+                                </p>
+                                <div class="book-specs-group">
+                                    <span class="book-spec-pill">A5 Portrait</span>
+                                    <span class="book-spec-pill">Grid System</span>
+                                    <span class="book-spec-pill">Uncoated Paper</span>
+                                    <span class="book-spec-pill">Perfect Bound</span>
+                                </div>
+                                <div class="book-action-label">
+                                    <span>OPEN GOOGLE DRIVE</span>
+                                    <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Book 6 -->
+                    <a href="https://drive.google.com/file/d/1HOSSsWYz889I3xxVWYqYP0h3MFjVNv0F/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="book-card">
+                        <img src="/Assets/printed/printed_6.webp" alt="Chronicles of Typography Cover 4" class="book-img" width="500" height="700" loading="lazy" decoding="async">
+                        <div class="book-overlay">
+                            <div class="book-info">
+                                <span class="book-category">TYPOGRAPHY ESSAY // GRAPHICS</span>
+                                <h3 class="book-title">Chronicles of Typography</h3>
+                                <p class="book-desc">
+                                    An essay book analyzing mechanical typesetting, historical linotype methods, and the
+                                    transition of print layouts into modernist grid dynamics.
+                                </p>
+                                <div class="book-specs-group">
+                                    <span class="book-spec-pill">A5 Portrait</span>
+                                    <span class="book-spec-pill">Grid System</span>
+                                    <span class="book-spec-pill">Uncoated Paper</span>
+                                    <span class="book-spec-pill">Perfect Bound</span>
+                                </div>
+                                <div class="book-action-label">
+                                    <span>OPEN GOOGLE DRIVE</span>
+                                    <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</BaseLayout>

@@ -1,0 +1,579 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroVideo from "../components/HeroVideo.astro";
+import "../styles/cinematic-motion.css";
+---
+
+<BaseLayout
+    title="Cinematic Motion | EZ Studio"
+    description="Explore kinetic design, motion graphics, and interactive loop stickers by Ezzy Razman."
+    currentPath="/cinematic-motion.html"
+>
+    <main class="main-content">
+        <!-- Portfolio Hero Section -->
+        <section class="portfolio-hero reveal-section">
+            <HeroVideo mp4Src="/Assets/motion/Cinematic Motion.mp4" />
+
+            <!-- Interactive Grid Overlay & Ambient Glow -->
+            <div class="hero-grid-overlay"></div>
+            <div
+                class="hero-ambient-glow"
+                style="background: radial-gradient(circle at center, rgba(0, 255, 255, 0.15) 0%, transparent 60%);"
+            >
+            </div>
+
+            <div class="portfolio-hero-content">
+                <span class="portfolio-badge"
+                    >DIVISION 03 // CINEMATIC MOTION</span
+                >
+                <h1 class="portfolio-hero-title">
+                    <span class="word" style="--i: 1;">DYNAMIC</span>
+                    <span class="word" style="--i: 2;">KEYFRAMES,</span>
+                    <br class="desktop-only" />
+                    <span class="word" style="--i: 3;">CAPTIVATING</span>
+                    <span class="word" style="--i: 4;">VISUALS</span>
+                    <span class="word" style="--i: 5;">IN</span>
+                    <span class="word highlight text-glow" style="--i: 6;"
+                        >MOTION.</span
+                    >
+                </h1>
+                <p class="portfolio-hero-desc">
+                    High-end 2D & 3D motion graphics, kinetic typography, and
+                    fluid visual animations. Designed for impactful brand
+                    campaigns, theatre title openings, and commercial projects.
+                </p>
+            </div>
+            <div class="scroll-prompt">
+                <span class="scroll-text">SCROLL TO EXPLORE</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- Cinematic Videos Section -->
+        <section
+            class="cinematic-videos-section reveal-section"
+            id="cinematic-videos"
+        >
+            <div class="portfolio-container">
+                <span
+                    class="about-badge reveal-item"
+                    style="--reveal-delay: 0.1s;">01 | MOTION GRAPHICS</span
+                >
+                <h2
+                    class="section-title reveal-item"
+                    style="--reveal-delay: 0.2s;"
+                >
+                    MOTION GRAPHIC SHOWCASE<span class="highlight text-glow"
+                        >.</span
+                    >
+                </h2>
+
+                <div class="video-showcase-grid">
+                    <!-- Project 1 -->
+                    <div
+                        class="video-showcase-item reveal-item"
+                        style="--reveal-delay: 0.3s;"
+                    >
+                        <div class="video-thumbnail-container">
+                            <img
+                                src="/Assets/motion/cinematic_1.webp"
+                                alt="EPIC X MYPAC OPENING Thumbnail"
+                                class="video-thumbnail"
+                                width="550"
+                                height="350"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <div class="play-overlay">
+                                <a
+                                    href="https://youtu.be/_9zcgwCA4v4"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="play-btn"
+                                    aria-label="Play Geometric Pulse on YouTube"
+                                >
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        fill="currentColor"
+                                    >
+                                        <polygon points="6,4 20,12 6,20"
+                                        ></polygon>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info-content">
+                            <span class="video-category"
+                                >Theatre Opening // 3D Motion</span
+                            >
+                            <h3 class="video-title">EPIC X MYPAC OPENING</h3>
+                            <p class="video-description">
+                                A 3D animation created for EPIC × MYPAC,
+                                combining dynamic visuals and motion graphics to
+                                create an engaging and visually striking
+                                representation of the collaboration.
+                            </p>
+                            <div class="gear-specs-group">
+                                <h4 class="specs-group-title">
+                                    TOOLS & SOFTWARE
+                                </h4>
+                                <div class="specs-pills">
+                                    <span class="spec-pill pill-orange"
+                                        >Adobe After Effects</span
+                                    >
+                                    <span class="spec-pill pill-orange"
+                                        >Adobe Illustrator</span
+                                    >
+                                    <span class="spec-pill pill-teal"
+                                        >Blender</span
+                                    >
+                                </div>
+                            </div>
+                            <a
+                                href="https://youtu.be/_9zcgwCA4v4"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="watch-youtube-btn"
+                            >
+                                <span>Watch on YouTube</span>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="16"
+                                    height="16"
+                                    stroke="currentColor"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                >
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"
+                                    ></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div
+                        class="video-showcase-item reveal-item"
+                        style="--reveal-delay: 0.4s;"
+                    >
+                        <div class="video-thumbnail-container">
+                            <img
+                                src="/Assets/motion/cinematic_2.webp"
+                                alt="Ask Pbot Thumbnail"
+                                class="video-thumbnail"
+                                width="550"
+                                height="350"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <div class="play-overlay">
+                                <a
+                                    href="https://youtu.be/Tf_-RfY0gIA"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="play-btn"
+                                    aria-label="Play Fluid Mechanics on YouTube"
+                                >
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        fill="currentColor"
+                                    >
+                                        <polygon points="6,4 20,12 6,20"
+                                        ></polygon>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info-content">
+                            <span class="video-category"
+                                >AI Promotional // VFX</span
+                            >
+                            <h3 class="video-title">Ask Pbot</h3>
+                            <p class="video-description">
+                                A 3D animation created for Ask Pbot, combining
+                                dynamic visuals and motion graphics to create an
+                                engaging and visually striking representation of
+                                the brand.
+                            </p>
+                            <div class="gear-specs-group">
+                                <h4 class="specs-group-title">
+                                    TOOLS & SOFTWARE
+                                </h4>
+                                <div class="specs-pills">
+                                    <span class="spec-pill pill-orange"
+                                        >Adobe After Effects</span
+                                    >
+                                    <span class="spec-pill pill-orange"
+                                        >Adobe Illustrator</span
+                                    >
+                                </div>
+                            </div>
+                            <a
+                                href="https://youtu.be/Tf_-RfY0gIA"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="watch-youtube-btn"
+                            >
+                                <span>Watch on YouTube</span>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="16"
+                                    height="16"
+                                    stroke="currentColor"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                >
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"
+                                    ></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div
+                        class="video-showcase-item reveal-item"
+                        style="--reveal-delay: 0.5s;"
+                    >
+                        <div class="video-thumbnail-container">
+                            <img
+                                src="/Assets/motion/cinematic_3.webp"
+                                alt="Seminar Permulaan Baru Thumbnail"
+                                class="video-thumbnail"
+                                width="550"
+                                height="350"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <div class="play-overlay">
+                                <a
+                                    href="https://youtu.be/h7ldTlNP_gg"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="play-btn"
+                                    aria-label="Play Chroma Shift on YouTube"
+                                >
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        fill="currentColor"
+                                    >
+                                        <polygon points="6,4 20,12 6,20"
+                                        ></polygon>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info-content">
+                            <span class="video-category"
+                                >Lineup Introduction // Motion Graphics</span
+                            >
+                            <h3 class="video-title">Seminar Permulaan Baru</h3>
+                            <p class="video-description">
+                                A dynamic motion graphic created for the Seminar
+                                Permulaan Baru, combining visuals and motion
+                                graphics to create an engaging and visually
+                                striking representation of the new features.
+                            </p>
+                            <div class="gear-specs-group">
+                                <h4 class="specs-group-title">
+                                    TOOLS & SOFTWARE
+                                </h4>
+                                <div class="specs-pills">
+                                    <span class="spec-pill pill-orange"
+                                        >Adobe Photoshop</span
+                                    >
+                                    <span class="spec-pill pill-orange"
+                                        >Adobe After Effects</span
+                                    >
+                                </div>
+                            </div>
+                            <a
+                                href="https://youtu.be/h7ldTlNP_gg"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="watch-youtube-btn"
+                            >
+                                <span>Watch on YouTube</span>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="16"
+                                    height="16"
+                                    stroke="currentColor"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                >
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"
+                                    ></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div
+                        class="video-showcase-item reveal-item"
+                        style="--reveal-delay: 0.4s;"
+                    >
+                        <div class="video-thumbnail-container">
+                            <img
+                                src="/Assets/motion/cinematic_2.webp"
+                                alt="ThatFridge Thumbnail"
+                                class="video-thumbnail"
+                                width="550"
+                                height="350"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <div class="play-overlay">
+                                <a
+                                    href="https://youtu.be/Tf_-RfY0gIA"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="play-btn"
+                                    aria-label="Play Fluid Mechanics on YouTube"
+                                >
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        fill="currentColor"
+                                    >
+                                        <polygon points="6,4 20,12 6,20"
+                                        ></polygon>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info-content">
+                            <span class="video-category"
+                                >AI Promotional // VFX</span
+                            >
+                            <h3 class="video-title">ThatFridge</h3>
+                            <p class="video-description">
+                                A 3D animation created for Ask Pbot, combining
+                                dynamic visuals and motion graphics to create an
+                                engaging and visually striking representation of
+                                the brand.
+                            </p>
+                            <div class="gear-specs-group">
+                                <h4 class="specs-group-title">
+                                    TOOLS & SOFTWARE
+                                </h4>
+                                <div class="specs-pills">
+                                    <span class="spec-pill pill-orange"
+                                        >Adobe After Effects</span
+                                    >
+                                </div>
+                            </div>
+                            <a
+                                href="https://youtu.be/Tf_-RfY0gIA"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="watch-youtube-btn"
+                            >
+                                <span>Watch on YouTube</span>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="16"
+                                    height="16"
+                                    stroke="currentColor"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                >
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"
+                                    ></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loop Stickers Section -->
+        <section
+            class="photography-section reveal-section"
+            id="stickers"
+            style="border-top: 1px solid rgba(255, 255, 255, 0.03);"
+        >
+            <div class="portfolio-container">
+                <span
+                    class="about-badge reveal-item"
+                    style="--reveal-delay: 0.1s;">02 | STICKER LABS</span
+                >
+                <h2
+                    class="section-title reveal-item"
+                    style="--reveal-delay: 0.2s;"
+                >
+                    INTERACTIVE LOOP STICKERS<span class="highlight text-glow"
+                        >.</span
+                    >
+                </h2>
+                <p
+                    class="section-desc reveal-item"
+                    style="--reveal-delay: 0.25s; max-width: 1100px; color: var(--clr-text-muted); font-size: 0.9rem; line-height: 1.6; margin-top: 0.8rem; margin-bottom: 2.5rem;"
+                >
+                    Press the Play button to view the animation. Once you’ve
+                    finished watching, please pause it to ensure smooth browsing
+                    throughout the website.
+                </p>
+
+                <div
+                    class="stickers-grid reveal-item"
+                    style="--reveal-delay: 0.3s;"
+                >
+                    <!-- Sticker 1 -->
+                    <div class="sticker-display-card">
+                        <img
+                            src="/Assets/motion/sticker_1-poster.webp"
+                            data-poster="/Assets/motion/sticker_1-poster.webp"
+                            data-animated="/Assets/motion/sticker_1.webp"
+                            alt="Aether Loop Sticker"
+                            class="sticker-gif"
+                            width="300"
+                            height="300"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                        <button
+                            class="sticker-toggle-btn"
+                            aria-label="Play animation"
+                        >
+                            <svg
+                                class="icon-pause"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                style="display: none;"
+                            >
+                                <rect x="5" y="4" width="4" height="16" rx="1"
+                                ></rect>
+                                <rect x="15" y="4" width="4" height="16" rx="1"
+                                ></rect>
+                            </svg>
+                            <svg
+                                class="icon-play"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                style="display: block;"
+                            >
+                                <polygon points="6,4 20,12 6,20"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Sticker 2 -->
+                    <div class="sticker-display-card">
+                        <img
+                            src="/Assets/motion/sticker_2-poster.webp"
+                            data-poster="/Assets/motion/sticker_2-poster.webp"
+                            data-animated="/Assets/motion/sticker_2.webp"
+                            alt="Hyper-Drive Sticker"
+                            class="sticker-gif"
+                            width="300"
+                            height="300"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                        <button
+                            class="sticker-toggle-btn"
+                            aria-label="Play animation"
+                        >
+                            <svg
+                                class="icon-pause"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                style="display: none;"
+                            >
+                                <rect x="5" y="4" width="4" height="16" rx="1"
+                                ></rect>
+                                <rect x="15" y="4" width="4" height="16" rx="1"
+                                ></rect>
+                            </svg>
+                            <svg
+                                class="icon-play"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                style="display: block;"
+                            >
+                                <polygon points="6,4 20,12 6,20"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</BaseLayout>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const stickerCards = document.querySelectorAll(".sticker-display-card");
+        stickerCards.forEach((card) => {
+            const stickerImg = card.querySelector(
+                ".sticker-gif",
+            ) as HTMLImageElement;
+            const toggleBtn = card.querySelector(
+                ".sticker-toggle-btn",
+            ) as HTMLButtonElement;
+
+            if (stickerImg && toggleBtn) {
+                const pauseIcon = toggleBtn.querySelector(
+                    ".icon-pause",
+                ) as HTMLElement;
+                const playIcon = toggleBtn.querySelector(
+                    ".icon-play",
+                ) as HTMLElement;
+                const posterSrc = stickerImg.dataset.poster || stickerImg.src;
+                const animatedSrc = stickerImg.dataset.animated || posterSrc;
+                let isPlaying = false;
+
+                const pauseSticker = () => {
+                    stickerImg.src = posterSrc;
+                    if (pauseIcon) pauseIcon.style.display = "none";
+                    if (playIcon) playIcon.style.display = "block";
+                    toggleBtn.setAttribute("aria-label", "Play animation");
+                    isPlaying = false;
+                };
+
+                const playSticker = () => {
+                    // Swap to animated WebP on demand (not downloaded until user clicks Play)
+                    stickerImg.src = animatedSrc;
+                    if (playIcon) playIcon.style.display = "none";
+                    if (pauseIcon) pauseIcon.style.display = "block";
+                    toggleBtn.setAttribute("aria-label", "Pause animation");
+                    isPlaying = true;
+                };
+
+                const togglePlayback = (e?: Event) => {
+                    if (e) e.stopPropagation();
+                    if (isPlaying) {
+                        pauseSticker();
+                    } else {
+                        playSticker();
+                    }
+                };
+
+                toggleBtn.addEventListener("click", togglePlayback);
+                card.addEventListener("click", togglePlayback);
+            }
+        });
+    });
+</script>

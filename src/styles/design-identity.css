@@ -1,0 +1,292 @@
+/* ==========================================================================
+   EZ STUDIO - Design & Identity Page Stylesheet
+   ========================================================================== */
+
+/* Poster Gallery Section */
+.posters-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.poster-card {
+  aspect-ratio: 2/3;
+}
+
+/* Logo Grid Section */
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.logo-display-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.005);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.3, 1), border-color 0.5s ease, background 0.5s ease;
+}
+
+.logo-display-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: center;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.logo-display-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.015);
+  border-color: rgba(0, 255, 255, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 128, 128, 0.06);
+}
+
+.logo-display-img {
+  max-width: 45%;
+  max-height: 45%;
+  height: auto;
+  width: auto;
+  opacity: 0.65;
+  filter: brightness(0) invert(1);
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.3, 1), opacity 0.4s ease, filter 0.4s ease;
+}
+
+.logo-display-card:hover .logo-display-img {
+  transform: scale(1.08);
+  opacity: 1;
+  filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.4)) brightness(0) invert(1);
+}
+
+.logo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 10, 10, 0.92) 0%, rgba(10, 10, 10, 0.35) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.2rem;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+.logo-display-card:hover .logo-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.logo-card-title {
+  font-family: var(--font-header);
+  font-size: 0.95rem;
+  color: var(--clr-white);
+  font-weight: 750;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.2rem;
+}
+
+.logo-card-tag {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: var(--clr-teal);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Brand Identity Showcase List */
+.identity-showcase-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.identity-showcase-item {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.008);
+  border: 1px solid rgba(255, 255, 255, 0.025);
+  padding: 1.8rem;
+  border-radius: 16px;
+  transition: transform 0.4s ease, border-color 0.4s ease, background 0.4s ease;
+}
+
+.identity-showcase-item:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.015);
+  border-color: rgba(254, 93, 38, 0.15);
+}
+
+.identity-showcase-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.identity-mockup-container {
+  flex: 1.1;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 16/10;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.identity-mockup {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.3, 1);
+}
+
+.identity-showcase-item:hover .identity-mockup {
+  transform: scale(1.03);
+}
+
+.identity-info-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.identity-tag {
+  font-family: var(--font-header);
+  font-size: 0.68rem;
+  letter-spacing: 2px;
+  color: var(--clr-orange);
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+}
+
+.identity-title {
+  font-family: var(--font-header);
+  font-size: clamp(1.25rem, 1.8vw, 1.8rem);
+  color: var(--clr-white);
+  margin-bottom: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.identity-description {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--clr-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.scope-details-group {
+  margin-bottom: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  padding-top: 1rem;
+}
+
+.scope-title {
+  font-family: var(--font-header);
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.scope-pills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.scope-pill {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(254, 93, 38, 0.12);
+  background: rgba(254, 93, 38, 0.05);
+  color: #ff7744;
+}
+
+
+
+@media (max-width: 1024px) {
+  .posters-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .logos-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  .identity-showcase-item {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .identity-showcase-item:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .identity-mockup-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .posters-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .poster-card .photo-overlay {
+    opacity: 1;
+    transform: translateY(0);
+    background: linear-gradient(to top, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.4) 50%, transparent 100%);
+  }
+
+  .poster-card .expand-indicator {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+
+  .logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .logo-item {
+    padding: 1.5rem 1rem;
+    min-height: 130px;
+  }
+
+  .identity-showcase-item {
+    padding: 1.25rem;
+    gap: 1.25rem;
+  }
+
+  .btn-behance {
+    width: 100%;
+    justify-content: center;
+    min-height: 46px;
+  }
+}

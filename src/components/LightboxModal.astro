@@ -1,0 +1,24 @@
+---
+// Fullscreen Lightbox Modal for Photography & Poster Artworks
+---
+<div id="lightboxModal" class="lightbox-modal" aria-hidden="true" role="dialog" aria-label="Image Expanded View">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <button id="lightboxCloseBtn" class="lightbox-close" aria-label="Close Expanded View">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+    </button>
+    <div class="lightbox-content">
+        <img id="lightboxImg" src="" alt="Expanded View" class="lightbox-img" decoding="async">
+        <div class="lightbox-caption">
+
+            <h4 id="lightboxTitle" class="lightbox-title">Image Title</h4>
+            <div class="lightbox-meta">
+                <span id="lightboxSpecs" class="lightbox-specs">Camera Specs</span>
+                <span class="lightbox-sep">//</span>
+                <span id="lightboxLocation" class="lightbox-location">Location Tag</span>
+            </div>
+        </div>
+    </div>
+</div>

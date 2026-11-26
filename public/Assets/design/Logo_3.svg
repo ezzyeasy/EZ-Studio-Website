@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Logo_side_dark_ver." data-name="Logo side dark ver." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 442">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #b1d7d7;
+      }
+
+      .cls-3 {
+        font-family: BebasNeueBold, 'Bebas Neue';
+        font-size: 250px;
+      }
+
+      .cls-4 {
+        fill: teal;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0" y1="221" x2="282.96" y2="221" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b1d7d7"/>
+      <stop offset="1" stop-color="teal"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <polygon class="cls-4" points="141.48 71.3 141.48 158.97 282.96 208.59 282.96 120.92 141.48 71.3"/>
+    <polygon class="cls-1" points="0 127.54 0 215.21 282.96 314.46 282.96 226.79 0 127.54"/>
+    <polygon class="cls-2" points="0 233.41 141.48 283.03 141.48 370.7 0 321.08 0 233.41"/>
+  </g>
+  <text class="cls-3" transform="translate(326.27 318.23)"><tspan x="0" y="0">EZ STUDIO</tspan></text>
+</svg>

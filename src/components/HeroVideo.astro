@@ -1,0 +1,20 @@
+---
+interface Props {
+  webmSrc?: string;
+  mp4Src: string;
+  posterSrc?: string;
+}
+
+const {
+  mp4Src,
+  webmSrc = mp4Src.replace(/\.mp4$/i, ".webm"),
+  posterSrc = mp4Src.replace(/\.mp4$/i, "-poster.webp"),
+} = Astro.props;
+---
+<div class="video-background">
+    <video autoplay loop muted playsinline poster={posterSrc} preload="metadata">
+        <source src={mp4Src} type="video/mp4" />
+        {webmSrc && <source src={webmSrc} type="video/webm" />}
+    </video>
+    <div class="video-overlay"></div>
+</div>

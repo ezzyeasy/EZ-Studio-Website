@@ -1,0 +1,640 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/more-about-me.css';
+---
+
+<BaseLayout
+  title="More About Me | Ezzy Razman"
+  description="Learn more about Ezzy Razman, creative multimedia specialist, timeline, experience, languages, awards and education."
+  currentPath="/more-about-me.html"
+>
+    <!-- More About Me Hero Section -->
+    <section class="about-hero reveal-section">
+        <!-- Video Background Container -->
+        <div class="video-background">
+            <video id="bg-intro-video" autoplay loop muted playsinline preload="metadata" poster="/Assets/about/Self Introduction Main SQ-poster.webp">
+                <source src="/Assets/about/Self Introduction Main SQ.webm" type="video/webm">
+                <source src="/Assets/about/Self Introduction Main SQ.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" style="background: linear-gradient(to top, rgba(18, 18, 18, 0.95) 0%, rgba(18, 18, 18, 0.6) 50%, rgba(18, 18, 18, 0.8) 100%);"></div>
+        </div>
+
+        <!-- Blueprint Tech Grid -->
+        <div class="about-hero-grid"></div>
+        <div class="about-hero-glow"></div>
+
+        <div class="about-hero-container">
+            <div class="about-hero-content reveal-item" style="--reveal-delay: 0.1s;">
+                <span class="about-badge">01 | MORE ABOUT ME</span>
+                <h1 class="about-hero-title">
+                    <span class="word" style="--i: 1;">BEHIND</span>
+                    <span class="word" style="--i: 2;">THE</span>
+                    <span class="word highlight text-glow" style="--i: 3;">CREATIVE</span>
+                    <span class="word highlight text-glow" style="--i: 4;">MIND.</span>
+                </h1>
+                <p class="about-hero-subtitle">Ezzy Razman — Multimedia Specialist & Creator</p>
+                <p class="about-hero-desc">
+                    Combining technical precision with unbounded imagination to turn abstract ideas into premium digital experiences.
+                </p>
+                <div class="about-hero-actions">
+                    <a href="/" class="btn-secondary" aria-label="Return Home">Return Home</a>
+                    <a href="/#contact" class="btn-primary" aria-label="Let's Connect">Let's Connect</a>
+
+                    <!-- Collapsible Video Controls Pill -->
+                    <div class="video-control-pill" id="videoControlPill">
+                        <button class="pill-toggle-btn" id="pillToggleBtn" aria-label="Toggle Video Controls" aria-expanded="false">
+                            <svg class="icon-toggle-open" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 20v-8M6 20V4M18 20v-4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="pill-content" id="pillContent">
+                            <button class="control-btn btn-play-pause" aria-label="Play or Pause Video">
+                                <svg class="icon-play" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display: none;">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                                <svg class="icon-pause" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                                </svg>
+                            </button>
+
+                            <div class="timeline-container">
+                                <span class="time-elapsed">0:00</span>
+                                <div class="timeline-bar">
+                                    <div class="timeline-progress"></div>
+                                </div>
+                                <span class="time-total">0:00</span>
+                            </div>
+
+                            <button class="control-btn btn-mute" aria-label="Mute or Unmute Video">
+                                <svg class="icon-unmute" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display: none;">
+                                    <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zM3 9v6h4l5 5V4L7 9H3z" />
+                                </svg>
+                                <svg class="icon-mute" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.21.05-.42.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Story Section -->
+    <section class="story-section reveal-section" id="story">
+        <div class="story-container">
+            <span class="about-badge reveal-item" style="--reveal-delay: 0.1s;">02 | TIMELINE</span>
+            <h2 class="story-title reveal-item" style="--reveal-delay: 0.2s;">
+                MY <span class="highlight text-glow">STORY.</span>
+            </h2>
+
+            <div class="timeline-grid reveal-item" style="--reveal-delay: 0.3s;">
+                <div class="timeline-track-line">
+                    <div class="timeline-track-progress"></div>
+                </div>
+
+                <!-- Step 1 -->
+                <div class="timeline-step">
+                    <div class="timeline-marker"><span class="marker-dot"></span></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <span class="card-year">2019</span>
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M23 7l-7 5 7 5V7zM1 5h15v14H1V5z" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="card-title">It all <span class="highlight">started</span> here.</h3>
+                        <p class="card-text">
+                            Thanks to my sister, I was first introduced to <strong>video editing</strong> through <strong>Sony Vegas Pro</strong>. I remember working on a video for a big family day, and from that experience, I became passionate about learning more. Since then, I've explored the software extensively, mastering <strong>effects</strong> and the <strong>basics of video editing</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-step">
+                    <div class="timeline-marker"><span class="marker-dot"></span></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <span class="card-year">2021</span>
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="card-title">The <span class="highlight">transition</span>.</h3>
+                        <p class="card-text">
+                            I wanted to expand my skills in <strong>design, motion graphics, and UI</strong>, so I started exploring <strong>Adobe products</strong>, which I find convenient and future-proof. With my basic knowledge, transitioning to these tools was smooth, and I picked them up quickly. Not only that, I also learned <strong>3D</strong> using <strong>Blender</strong> and picked up more knowledge about storytelling.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-step">
+                    <div class="timeline-marker"><span class="marker-dot"></span></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <span class="card-year">2022</span>
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M20 8v6M23 11h-6" stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="8.5" cy="7" r="4" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="card-title">The <span class="highlight">real</span> deal.</h3>
+                        <p class="card-text">
+                            This is when the <strong>real journey began</strong> — I started working professionally after gaining enough confidence to promote myself. Luckily, I landed my <strong>first job with an emerging content creator</strong> while also taking on smaller projects independently under my own name.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-step">
+                    <div class="timeline-marker"><span class="marker-dot"></span></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <span class="card-year">2024</span>
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><span class="highlight">EZ Studio</span> born.</h3>
+                        <p class="card-text">
+                            I realised my name was gaining recognition in the industry, so I took the time to create my <strong>own professional brand</strong> — including a website, brand identity, and public promotion. This is where my journey as an <strong>independent studio</strong> began, and it continues to thrive today. One day, I will make my studio well known and potentially the best out there.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Language Section -->
+    <section class="language-section reveal-section" id="languages">
+        <div class="language-container">
+            <div class="language-grid">
+                <div class="language-intro reveal-item" style="--reveal-delay: 0.1s;">
+                    <span class="about-badge">03 | LANGUAGE</span>
+                    <h2 class="language-title">
+                        PROFICIENCY<span class="highlight text-glow">.</span>
+                    </h2>
+                    <p class="language-subtitle-text">
+                        A global mindset requires fluid communication. Here is my linguistic proficiency profile:
+                    </p>
+                </div>
+
+                <div class="language-list reveal-item" style="--reveal-delay: 0.3s;">
+                    <div class="lang-card">
+                        <div class="lang-card-header">
+                            <span class="lang-name">Bahasa Melayu</span>
+                            <span class="lang-level">NATIVE</span>
+                        </div>
+                        <div class="lang-bar-track">
+                            <div class="lang-bar-progress" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="lang-card">
+                        <div class="lang-card-header">
+                            <span class="lang-name">English</span>
+                            <span class="lang-level">PROFICIENT (B2 / Finished C1)</span>
+                        </div>
+                        <div class="lang-bar-track">
+                            <div class="lang-bar-progress" style="width: 85%;"></div>
+                        </div>
+                        <span class="lang-details">Cambridge Assessment English B2 (C1048366) | Finished Class Level C1</span>
+                    </div>
+
+                    <div class="lang-card">
+                        <div class="lang-card-header">
+                            <span class="lang-name">Korean</span>
+                            <span class="lang-level">TOPIK LEVEL 4</span>
+                        </div>
+                        <div class="lang-bar-track">
+                            <div class="lang-bar-progress" style="width: 70%;"></div>
+                        </div>
+                        <span class="lang-details">Test of Proficiency in Korean Level 4 (1685-708-9059-1815)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section reveal-section" id="education">
+        <div class="education-container">
+            <div class="education-grid">
+                <div class="education-intro reveal-item" style="--reveal-delay: 0.2s;">
+                    <span class="about-badge">04 | ACADEMICS</span>
+                    <h2 class="education-title">
+                        EDUCATION<span class="highlight text-glow">.</span>
+                    </h2>
+                    <p class="education-desc-text">
+                        A journey of continuous learning, blending technical foundation with global design expertise.
+                    </p>
+                    <div class="edu-stats-wrapper">
+                        <div class="edu-stat-item">
+                            <span class="edu-stat-val">2+</span>
+                            <span class="edu-stat-lbl">Institutions</span>
+                        </div>
+                        <div class="edu-stat-item">
+                            <span class="edu-stat-val">6 Yrs</span>
+                            <span class="edu-stat-lbl">Academic Study</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-deck reveal-item" style="--reveal-delay: 0.3s;">
+                    <div class="edu-card card-unikl">
+                        <div class="edu-card-decor"></div>
+                        <div class="edu-card-content">
+                            <div class="edu-meta">
+                                <span class="edu-year">2022 - 2023</span>
+                                <span class="edu-location">
+                                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                    Kuala Lumpur, MY
+                                </span>
+                            </div>
+                            <h3 class="edu-institution">University Kuala Lumpur (MIIT)</h3>
+                            <span class="edu-faculty">Foundation Degree in Animation for Korean University</span>
+                            <p class="edu-degree">Basic animation, design, and 3D studies combined with intensive language course</p>
+                        </div>
+                    </div>
+
+                    <div class="edu-card card-seoultech">
+                        <div class="edu-card-decor"></div>
+                        <div class="edu-card-content">
+                            <div class="edu-meta">
+                                <span class="edu-year">2024 - 2028</span>
+                                <span class="edu-location">
+                                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                    Seoul, KR
+                                </span>
+                            </div>
+                            <h3 class="edu-institution">Seoul National University of Science and Technology</h3>
+                            <span class="edu-faculty">Bachelor Degree in Visual Design</span>
+                            <p class="edu-degree">Academic Study focusing on visual branding, UX/UI, and motion graphic design systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section reveal-section" id="experience">
+        <div class="experience-container">
+            <span class="about-badge reveal-item" style="--reveal-delay: 0.1s;">05 | CAREER</span>
+            <h2 class="experience-title reveal-item" style="--reveal-delay: 0.2s;">
+                WORK EXPERIENCE<span class="highlight text-glow">.</span>
+            </h2>
+
+            <div class="experience-list reveal-item" style="--reveal-delay: 0.3s;">
+                <div class="exp-item">
+                    <button class="exp-header" aria-expanded="false" aria-controls="exp-desc-1">
+                        <div class="exp-meta-info">
+                            <span class="exp-year">2021 - Present</span>
+                            <h3 class="exp-company">EZ Studio</h3>
+                            <span class="exp-role">Self Brand, Freelance</span>
+                        </div>
+                        <div class="exp-toggle-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <line class="line-h" x1="12" y1="5" x2="12" y2="19" stroke-linecap="round" />
+                                <line class="line-v" x1="5" y1="12" x2="19" y2="12" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="exp-content" id="exp-desc-1" aria-hidden="true">
+                        <ul class="exp-details-list">
+                            <li>Designed and developed 5+ creative stream overlays and assets for Twitch streamers, while also managing their streams—resulting in a 50% increase in concurrent viewers.</li>
+                            <li>Served as a consultant for Havarri AKH Production, supporting social media promotion for their film and contributing to ideation for a drama series that became a hit in Malaysia.</li>
+                            <li>Currently collaborating with Hikayat Fandom Publication as a long-term client, leading event asset design, social media content, and promotional media. Notably produced 3 book promotion videos showcased at the Asia International Book Fair in Beijing, China.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-item">
+                    <button class="exp-header" aria-expanded="false" aria-controls="exp-desc-2">
+                        <div class="exp-meta-info">
+                            <span class="exp-year">2022 - 2023</span>
+                            <h3 class="exp-company">Mas Faiz Hakim</h3>
+                            <span class="exp-role">Creative Multimedia Manager</span>
+                        </div>
+                        <div class="exp-toggle-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <line class="line-h" x1="12" y1="5" x2="12" y2="19" stroke-linecap="round" />
+                                <line class="line-v" x1="5" y1="12" x2="19" y2="12" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="exp-content" id="exp-desc-2" aria-hidden="true">
+                        <ul class="exp-details-list">
+                            <li>Collaborated with an emerging influencer, overseeing end-to-end creative production including pre-production, production, and post-production. Contributed to the account's growth, reaching nearly 20,000 followers.</li>
+                            <li>Managed behind-the-scenes logistics such as equipment coordination, private tuition promotions, and partnership meetings. These responsibilities strengthened my independence, organizational skills, and exposure to corporate collaboration.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-item">
+                    <button class="exp-header" aria-expanded="false" aria-controls="exp-desc-3">
+                        <div class="exp-meta-info">
+                            <span class="exp-year">2023 - 2024</span>
+                            <h3 class="exp-company">Pandai Sdn Bhd</h3>
+                            <span class="exp-role">Full-Time Creative Multimedia</span>
+                        </div>
+                        <div class="exp-toggle-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <line class="line-h" x1="12" y1="5" x2="12" y2="19" stroke-linecap="round" />
+                                <line class="line-v" x1="5" y1="12" x2="19" y2="12" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="exp-content" id="exp-desc-3" aria-hidden="true">
+                        <ul class="exp-details-list">
+                            <li>Strengthened teamwork and industry knowledge by handling multimedia needs across four departments, ensuring smooth B2B and B2C processes within a corporate environment.</li>
+                            <li>Advanced UI/UX skills by developing a personal website that received highly positive feedback from both the manager and CTO, motivating continued skill growth in design and user experience.</li>
+                            <li>Enhanced broadcast production expertise by managing end-to-end creative workflows for a live program with over 1,000 viewers. The event became the company’s most successful program to date.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards-section reveal-section" id="awards">
+        <div class="awards-container">
+            <span class="about-badge reveal-item" style="--reveal-delay: 0.1s;">06 | RECOGNITION</span>
+            <h2 class="awards-title reveal-item" style="--reveal-delay: 0.2s;">
+                AWARDS & ACHIEVEMENTS<span class="highlight text-glow">.</span>
+            </h2>
+
+            <div class="awards-grid reveal-item" style="--reveal-delay: 0.3s;">
+                <div class="award-card">
+                    <div class="award-glow"></div>
+                    <div class="award-bg-image" style="background-image: url('/Assets/about/Award.webp');"></div>
+                    <div class="award-content">
+                        <div class="award-badge-ribbon">1ST PLACE</div>
+                        <div class="award-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="8" r="7" />
+                                <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12" />
+                            </svg>
+                        </div>
+                        <h3 class="award-card-title">Jejak Juara Kuala Lumpur</h3>
+                        <p class="award-issuer">Kementerian Pendidikan Malaysia // 2022</p>
+                        <p class="award-desc">Recognized for outstanding motion graphic video, good story, and cinematic pacing.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-glow"></div>
+                    <div class="award-bg-image" style="background-image: url('/Assets/about/Award_2.webp');"></div>
+                    <div class="award-content">
+                        <div class="award-badge-ribbon">2ND PLACE</div>
+                        <div class="award-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="award-card-title">KRS Cyber Challenge</h3>
+                        <p class="award-issuer">Kementerian Pendidikan Malaysia // 2022</p>
+                        <p class="award-desc">Dominating the state level and contributing to Kuala Lumpur winning 1st among 12 states.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-glow"></div>
+                    <div class="award-bg-image" style="background-image: url('/Assets/home/featured_3.webp');"></div>
+                    <div class="award-content">
+                        <div class="award-badge-ribbon">SOON</div>
+                        <div class="award-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M8 12l3 3 5-5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3 class="award-card-title">Upcoming Endeavors</h3>
+                        <p class="award-issuer">In Progress // 2025</p>
+                        <p class="award-desc">Striving towards higher distinctions in modern interaction design and 3D web spaces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section reveal-section" id="testimonials">
+        <div class="testimonials-container">
+            <span class="about-badge reveal-item" style="--reveal-delay: 0.1s;">REPUTATION & REVIEWS</span>
+            <h2 class="testimonials-title reveal-item" style="--reveal-delay: 0.2s;">
+                KUDOS & FEEDBACK<span class="highlight text-glow">.</span>
+            </h2>
+
+            <div class="testimonials-layout reveal-item" style="--reveal-delay: 0.3s;">
+                <div class="testimonial-card card-primary">
+                    <div class="testimonial-decor"></div>
+                    <div class="quote-mark-bg">
+                        <svg viewBox="0 0 24 24" width="120" height="120" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar-wrapper">
+                                <img src="/Assets/about/avatar_ratih.webp" alt="Ratih Anggraeni" class="testimonial-avatar" width="60" height="60" loading="lazy" decoding="async">
+                                <span class="active-status-dot" title="Verified Collaborator"></span>
+                            </div>
+                            <div class="testimonial-meta">
+                                <h3 class="testimonial-name">Ratih Anggraeni</h3>
+                                <span class="testimonial-role">Co-worker @ Pandai Sdn Bhd</span>
+                            </div>
+                            <div class="testimonial-verified-badge">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    <path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Verified
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            "I highly recommend Ezzy for his exceptional skills and dedication as a <strong>video editor</strong>. Ezzy consistently delivers high-quality work and has been invaluable in our projects together. His expertise in video editing is evident in the polished and impactful content. Beyond his technical proficiency, Ezzy is always willing to lend a hand and share insights, making him a <strong>great team player</strong>. I have no doubt Ezzy will continue to excel and make significant contributions in his career."
+                        </p>
+
+                        <div class="testimonial-footer-meta">
+                            <span class="ref-code">REF_ID: #892-PANDAI</span>
+                            <span class="ref-date">Apr 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card card-secondary">
+                    <div class="testimonial-decor"></div>
+                    <div class="quote-mark-bg">
+                        <svg viewBox="0 0 24 24" width="120" height="120" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar-wrapper">
+                                <img src="/Assets/about/avatar_sodaddicted.webp" alt="Sodaddicted" class="testimonial-avatar" width="60" height="60" loading="lazy" decoding="async">
+                                <span class="active-status-dot status-teal" title="Verified Creator"></span>
+                            </div>
+                            <div class="testimonial-meta">
+                                <h3 class="testimonial-name">Sodaddicted</h3>
+                                <span class="testimonial-role">Streamer @ EZ Studio Client</span>
+                            </div>
+                            <div class="testimonial-verified-badge badge-teal">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    <path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Verified
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "I had the pleasure of working with Ezzy on a songwriting project, and I was truly impressed by his <strong>adaptability and creativity</strong>. Ezzy has a remarkable ability to take ideas and transform them into lyrics and melodies that perfectly capture the intended emotion and message. His <strong>collaborative spirit and dedication</strong> made the entire process seamless and enjoyable. If you're looking for someone who can bring your vision to life with talent and professionalism, I wholeheartedly recommend Ezzy."
+                        </p>
+                        <div class="testimonial-footer-meta">
+                            <span class="ref-code">REF_ID: #405-TWITCH</span>
+                            <span class="ref-date">Oct 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Video Control Pill
+        const bgVideo = document.getElementById('bg-intro-video') as HTMLVideoElement;
+        const playPauseBtn = document.querySelector('.btn-play-pause') as HTMLElement;
+        const muteBtn = document.querySelector('.btn-mute') as HTMLElement;
+        const timelineBar = document.querySelector('.timeline-bar') as HTMLElement;
+        const timelineProgress = document.querySelector('.timeline-progress') as HTMLElement;
+        const timeElapsed = document.querySelector('.time-elapsed') as HTMLElement;
+        const timeTotal = document.querySelector('.time-total') as HTMLElement;
+        const controlPill = document.getElementById('videoControlPill') as HTMLElement;
+        const pillToggleBtn = document.getElementById('pillToggleBtn') as HTMLElement;
+
+        if (controlPill && pillToggleBtn) {
+            pillToggleBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isExpanded = controlPill.classList.toggle('expanded');
+                pillToggleBtn.setAttribute('aria-expanded', String(isExpanded));
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!controlPill.contains(e.target as Node) && controlPill.classList.contains('expanded')) {
+                    controlPill.classList.remove('expanded');
+                    pillToggleBtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
+        if (bgVideo && playPauseBtn && muteBtn && timelineBar && timelineProgress && timeElapsed && timeTotal) {
+            const playIcon = playPauseBtn.querySelector('.icon-play') as HTMLElement;
+            const pauseIcon = playPauseBtn.querySelector('.icon-pause') as HTMLElement;
+            const muteIcon = muteBtn.querySelector('.icon-mute') as HTMLElement;
+            const unmuteIcon = muteBtn.querySelector('.icon-unmute') as HTMLElement;
+
+            const formatTime = (timeInSeconds: number) => {
+                if (isNaN(timeInSeconds) || timeInSeconds === Infinity) return '0:00';
+                const mins = Math.floor(timeInSeconds / 60);
+                const secs = Math.floor(timeInSeconds % 60);
+                return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+            };
+
+            const initDuration = () => {
+                if (bgVideo.duration && !isNaN(bgVideo.duration)) {
+                    timeTotal.textContent = formatTime(bgVideo.duration);
+                }
+            };
+
+            bgVideo.addEventListener('loadedmetadata', initDuration);
+            bgVideo.addEventListener('durationchange', initDuration);
+            bgVideo.addEventListener('canplay', initDuration);
+            initDuration();
+
+            playPauseBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (bgVideo.paused) {
+                    bgVideo.play();
+                    if (playIcon) playIcon.style.display = 'none';
+                    if (pauseIcon) pauseIcon.style.display = 'block';
+                } else {
+                    bgVideo.pause();
+                    if (playIcon) playIcon.style.display = 'block';
+                    if (pauseIcon) pauseIcon.style.display = 'none';
+                }
+            });
+
+            muteBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                bgVideo.muted = !bgVideo.muted;
+                if (bgVideo.muted) {
+                    if (muteIcon) muteIcon.style.display = 'block';
+                    if (unmuteIcon) unmuteIcon.style.display = 'none';
+                } else {
+                    if (muteIcon) muteIcon.style.display = 'none';
+                    if (unmuteIcon) unmuteIcon.style.display = 'block';
+                }
+            });
+
+            bgVideo.addEventListener('timeupdate', () => {
+                if (!bgVideo.duration || isNaN(bgVideo.duration)) return;
+                const percentage = (bgVideo.currentTime / bgVideo.duration) * 100;
+                timelineProgress.style.width = `${percentage}%`;
+                timeElapsed.textContent = formatTime(bgVideo.currentTime);
+            });
+
+            timelineBar.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (!bgVideo.duration || isNaN(bgVideo.duration)) return;
+                const rect = timelineBar.getBoundingClientRect();
+                const clickPosition = (e.clientX - rect.left) / rect.width;
+                bgVideo.currentTime = clickPosition * bgVideo.duration;
+            });
+        }
+
+        // Accordion Details
+        const expItems = document.querySelectorAll('.exp-item');
+        expItems.forEach(item => {
+            const header = item.querySelector('.exp-header') as HTMLElement;
+            const content = item.querySelector('.exp-content') as HTMLElement;
+
+            if (header && content) {
+                header.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const isActive = item.classList.contains('active');
+
+                    item.classList.toggle('active');
+                    header.setAttribute('aria-expanded', String(!isActive));
+                    content.setAttribute('aria-hidden', String(isActive));
+
+                    if (!isActive) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        content.style.opacity = '1';
+                    } else {
+                        content.style.maxHeight = '0';
+                        content.style.opacity = '0';
+                    }
+                });
+            }
+        });
+    });
+</script>

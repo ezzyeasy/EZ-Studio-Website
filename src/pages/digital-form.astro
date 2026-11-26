@@ -1,0 +1,328 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroSlideshow from "../components/HeroSlideshow.astro";
+import "../styles/digital-form.css";
+
+const heroImages = [
+    "/Assets/3d/room_1.webp",
+    "/Assets/3d/room_2.webp",
+    "/Assets/3d/room_3.webp",
+    "/Assets/3d/room_4.webp",
+    "/Assets/3d/video_2.webp"
+];
+---
+
+<BaseLayout
+    title="Digital Form | EZ Studio"
+    description="Explore 3D modeling, environment design, and digital animation experiments by Ezzy Razman."
+    currentPath="/digital-form.html"
+>
+    <main class="main-content">
+        <!-- Portfolio Hero Section -->
+        <section class="portfolio-hero reveal-section">
+            <HeroSlideshow images={heroImages} />
+
+            <!-- Interactive Grid Overlay & Ambient Glow -->
+            <div class="hero-grid-overlay"></div>
+            <div
+                class="hero-ambient-glow"
+                style="background: radial-gradient(circle at center, rgba(0, 255, 255, 0.15) 0%, transparent 60%);"
+            >
+            </div>
+
+            <div class="portfolio-hero-content">
+                <span class="portfolio-badge">DIVISION 02 // DIGITAL FORM</span>
+                <h1 class="portfolio-hero-title">
+                    <span class="word" style="--i: 1;">SURFACES,</span>
+                    <span class="word" style="--i: 2;">POLYGONS,</span>
+                    <br class="desktop-only" />
+                    <span class="word" style="--i: 3;">RENDERED</span>
+                    <span class="word highlight text-glow" style="--i: 4;"
+                        >WORLDS.</span
+                    >
+                </h1>
+                <p class="portfolio-hero-desc">
+                    3D environment creation, hard-surface modeling, lighting
+                    studies, and physics-based simulations. Blending realistic
+                    materials with stylized virtual architecture.
+                </p>
+            </div>
+            <div class="scroll-prompt">
+                <span class="scroll-text">SCROLL TO EXPLORE</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- 3D Modeling Section -->
+        <section
+            class="cinematic-videos-section reveal-section"
+            id="modeling-gallery"
+        >
+            <div class="portfolio-container">
+                <span
+                    class="about-badge reveal-item"
+                    style="--reveal-delay: 0.1s;">01 | 3D MODELLING</span
+                >
+                <h2
+                    class="section-title reveal-item"
+                    style="--reveal-delay: 0.2s;"
+                >
+                    3D MODELLING GALLERY<span class="highlight text-glow"
+                        >.</span
+                    >
+                </h2>
+
+                <div
+                    class="sculpts-grid reveal-item"
+                    style="--reveal-delay: 0.3s;"
+                >
+                    <div class="sculpt-card">
+                        <div class="sculpt-img-wrapper">
+                            <img
+                                src="/Assets/3d/room_1.webp"
+                                alt="My Dream House - View 1"
+                                class="sculpt-img active"
+                                width="600"
+                                height="400"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <img
+                                src="/Assets/3d/room_2.webp"
+                                alt="My Dream House - View 2"
+                                class="sculpt-img"
+                                width="600"
+                                height="400"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <img
+                                src="/Assets/3d/room_3.webp"
+                                alt="My Dream House - View 3"
+                                class="sculpt-img"
+                                width="600"
+                                height="400"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <img
+                                src="/Assets/3d/room_4.webp"
+                                alt="My Dream House - View 4"
+                                class="sculpt-img"
+                                width="600"
+                                height="400"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </div>
+                        <div class="sculpt-info">
+                            <h3 class="sculpt-title">My Dream House</h3>
+                            <span class="sculpt-tag"
+                                >MODELLING & INTERIOR DESIGN</span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Presentation Section -->
+        <section
+            class="cinematic-videos-section reveal-section"
+            id="presentation"
+            style="border-top: 1px solid rgba(255, 255, 255, 0.03);"
+        >
+            <div class="portfolio-container">
+                <span
+                    class="about-badge reveal-item"
+                    style="--reveal-delay: 0.1s;">02 | 3D ANIMATION</span
+                >
+                <h2
+                    class="section-title reveal-item"
+                    style="--reveal-delay: 0.2s;"
+                >
+                    3D ANIMATION GALLERY<span class="highlight text-glow"
+                        >.</span
+                    >
+                </h2>
+
+                <div class="video-showcase-list">
+                    <div
+                        class="video-showcase-item reveal-item"
+                        style="--reveal-delay: 0.3s;"
+                    >
+                        <div class="video-thumbnail-container">
+                            <img
+                                src="/Assets/3d/video_2.webp"
+                                alt="Eldethos Trailer Thumbnail"
+                                class="video-thumbnail"
+                                width="550"
+                                height="350"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <div class="play-overlay">
+                                <a
+                                    href="https://www.youtube.com/watch?v=OIgTc3s8c8Q"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="play-btn"
+                                    aria-label="Play 3D Model Presentation on YouTube"
+                                >
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        fill="currentColor"
+                                    >
+                                        <polygon points="6,4 20,12 6,20"
+                                        ></polygon>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info-content">
+                            <span class="video-category"
+                                >EZ STUDIO // TRAILER</span
+                            >
+                            <h3 class="video-title">
+                                Eldethos: Romance of the Flagbearers
+                            </h3>
+                            <p class="video-description">
+                                A cinematic trailer that tells a compelling
+                                story of love, war, sacrifice, and the bonds
+                                that endure through unimaginable hardship.
+                            </p>
+                            <div class="gear-specs-group">
+                                <h4 class="specs-group-title">
+                                    TOOLS & RENDERER
+                                </h4>
+                                <div class="specs-pills">
+                                    <span class="spec-pill pill-orange"
+                                        >Blender 3D</span
+                                    >
+                                    <span class="spec-pill pill-orange"
+                                        >Adobe Premiere Pro</span
+                                    >
+                                </div>
+                            </div>
+                            <a
+                                href="https://www.youtube.com/watch?v=OIgTc3s8c8Q"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="watch-youtube-btn"
+                            >
+                                <span>Watch on YouTube</span>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    width="16"
+                                    height="16"
+                                    stroke="currentColor"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                >
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"
+                                    ></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Controlled Local Video Section -->
+        <section
+            class="photography-section reveal-section"
+            id="local-video"
+            style="border-top: 1px solid rgba(255, 255, 255, 0.03);"
+        >
+            <div class="portfolio-container">
+                <span
+                    class="about-badge reveal-item"
+                    style="--reveal-delay: 0.1s;"
+                    >03 | 3D ANIMATION EXPERIMENTS</span
+                >
+                <h2
+                    class="section-title reveal-item"
+                    style="--reveal-delay: 0.2s;"
+                >
+                    EXPERIMENTAL GALLERY<span class="highlight text-glow"
+                        >.</span
+                    >
+                </h2>
+
+                <div
+                    class="video-showcase-item reveal-item"
+                    style="--reveal-delay: 0.3s; flex-direction: column; gap: 2rem; padding: 2rem; background: rgba(18, 18, 18, 0.5);"
+                >
+                    <div
+                        style="width: 100%; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.05); aspect-ratio: 16/9;"
+                    >
+                        <video
+                            class="tech-video"
+                            controls
+                            poster="/Assets/3d/video_1-poster.webp"
+                            style="width: 100%; height: 100%; object-fit: cover;"
+                            preload="metadata"
+                        >
+                            <source
+                                src="/Assets/3d/video_1.mp4"
+                                type="video/mp4"
+                            />
+                            <source
+                                src="/Assets/3d/video_1.webm"
+                                type="video/webm"
+                            />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div style="width: 100%; text-align: left;">
+                        <span
+                            class="video-category"
+                            style="color: var(--clr-orange);"
+                            >UNIKL // SHORT FILM</span
+                        >
+                        <h3
+                            class="video-title"
+                            style="margin: 0.5rem 0; font-size: 1.5rem; color: var(--clr-white);"
+                        >
+                            Breaking Into The Real World
+                        </h3>
+                        <p
+                            class="video-description"
+                            style="margin: 0; color: var(--clr-text-muted); font-size: 0.92rem; line-height: 1.6;"
+                        >
+                            This was my first attempt at creating a full
+                            animation under one minute for my final university
+                            project. I experimented with physics and character
+                            animation, using Mixamo for smoother motion. It was
+                            challenging but strengthened my interest and skills
+                            in 3D animation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</BaseLayout>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const sculptImgWrappers = document.querySelectorAll(
+            ".sculpt-img-wrapper",
+        );
+        sculptImgWrappers.forEach((wrapper) => {
+            const images = wrapper.querySelectorAll(".sculpt-img");
+            if (images.length <= 1) return;
+
+            let imgIndex = 0;
+            setInterval(() => {
+                images[imgIndex].classList.remove("active");
+                imgIndex = (imgIndex + 1) % images.length;
+                images[imgIndex].classList.add("active");
+            }, 3000);
+        });
+    });
+</script>

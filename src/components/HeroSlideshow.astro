@@ -1,0 +1,15 @@
+---
+interface Props {
+  images: string[];
+}
+
+const { images } = Astro.props;
+---
+<div class="hero-slideshow-background" aria-hidden="true">
+    {images.map((img, index) => (
+        <div class={`hero-slide ${index === 0 ? 'active' : ''}`}>
+            <img src={img} alt="" class="hero-slide-img" fetchpriority={index === 0 ? 'high' : 'low'} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" />
+        </div>
+    ))}
+    <div class="video-overlay"></div>
+</div>

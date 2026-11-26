@@ -1,0 +1,340 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroVideo from '../components/HeroVideo.astro';
+import '../styles/cinematic-visual.css';
+---
+
+<BaseLayout
+  title="Cinematic Visual | EZ Studio"
+  description="Explore cinematic videography and professional photography by Ezzy Razman."
+  currentPath="/cinematic-visual.html"
+>
+    <main class="main-content">
+        <!-- Portfolio Hero Section -->
+        <section class="portfolio-hero reveal-section">
+            <HeroVideo
+                mp4Src="/Assets/cinematic/Cinematic Main Compressed.mp4"
+            />
+
+            <!-- Interactive Grid Overlay & Ambient Glow -->
+            <div class="hero-grid-overlay"></div>
+            <div class="hero-ambient-glow" style="background: radial-gradient(circle at center, rgba(0, 255, 255, 0.15) 0%, transparent 60%);"></div>
+
+            <div class="portfolio-hero-content">
+                <span class="portfolio-badge">DIVISION 01 // CINEMATIC VISUAL</span>
+                <h1 class="portfolio-hero-title">
+                    <span class="word" style="--i: 1;">CAPTURING</span>
+                    <span class="word" style="--i: 2;">LIGHT,</span> <br class="desktop-only">
+                    <span class="word" style="--i: 3;">FRAMING</span>
+                    <span class="word highlight text-glow" style="--i: 4;">TIME,</span>
+                    <span class="word" style="--i: 5;">SHAPING</span>
+                    <span class="word highlight text-glow" style="--i: 6;">REALITY.</span>
+                </h1>
+                <p class="portfolio-hero-desc">
+                    Cinematic videography, lens-based storytelling, and high-fidelity photography. Exploring human
+                    emotion, cityscapes, and visual aesthetics through deliberate lighting and composition.
+                </p>
+            </div>
+            <div class="scroll-prompt">
+                <span class="scroll-text">SCROLL TO EXPLORE</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- Cinematic Videos Section -->
+        <section class="cinematic-videos-section reveal-section" id="cinematic-videos">
+            <div class="portfolio-container">
+                <span class="about-badge reveal-item" style="--reveal-delay: 0.1s;">01 | VIDEOGRAPHY</span>
+                <h2 class="section-title reveal-item" style="--reveal-delay: 0.2s;">
+                    FEATURED CINEMATIC FILMS<span class="highlight text-glow">.</span>
+                </h2>
+
+                <div class="video-showcase-list">
+                    <!-- Video Item 1 -->
+                    <div class="video-showcase-item reveal-item" style="--reveal-delay: 0.3s;">
+                        <div class="video-thumbnail-container">
+                            <img src="/Assets/cinematic/cinematic_1.webp" alt="A Day in Life of Camera Thumbnail" class="video-thumbnail" width="550" height="350" loading="lazy" decoding="async">
+                            <div class="play-overlay">
+                                <a href="https://youtu.be/1pfhcxhVdxo?si=UwQaBHHZhx0v-iru" target="_blank" rel="noopener noreferrer" class="play-btn" aria-label="Play Luminescent Paths on YouTube">
+                                    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                        <polygon points="6,4 20,12 6,20" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info-content">
+                            <span class="video-category">SEOULTECH // SHORT FILM</span>
+                            <h3 class="video-title">A Day in Life of Camera</h3>
+                            <p class="video-description">
+                                A POV video filmed at Lotte Aquarium, capturing the world through the eyes of a camera
+                                with immersive cinematography and editing.
+                            </p>
+                            <div class="gear-specs-group">
+                                <h4 class="specs-group-title">EQUIPMENT & SOFTWARE</h4>
+                                <div class="specs-pills">
+                                    <span class="spec-pill pill-orange">Sony ZV-E10</span>
+                                    <span class="spec-pill pill-orange">Sony A6400</span>
+                                    <span class="spec-pill pill-orange">Sigma 18-50mm F2.8</span>
+                                    <span class="spec-pill pill-orange">Sony 50mm F1.8</span>
+                                    <span class="spec-pill pill-teal">Adobe Premiere Pro</span>
+                                </div>
+                            </div>
+                            <a href="https://youtu.be/1pfhcxhVdxo?si=UwQaBHHZhx0v-iru" target="_blank" rel="noopener noreferrer" class="watch-youtube-btn">
+                                <span>Watch on YouTube</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Video Item 2 -->
+                    <div class="video-showcase-item reveal-item" style="--reveal-delay: 0.4s;">
+                        <div class="video-thumbnail-container">
+                            <img src="/Assets/cinematic/cinematic_2.webp" alt="Kuala Lumpur Nightscapes Thumbnail" class="video-thumbnail" width="550" height="350" loading="lazy" decoding="async">
+                            <div class="play-overlay">
+                                <a href="https://www.youtube.com/watch?v=PkuWN5TiKh0" target="_blank" rel="noopener noreferrer" class="play-btn" aria-label="Play Kuala Lumpur Nightscapes on YouTube">
+                                    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                        <polygon points="6,4 20,12 6,20" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info-content">
+                            <span class="video-category">EZ STUDIO // MONTAGE FILM</span>
+                            <h3 class="video-title">Kuala Lumpur After Dark</h3>
+                            <p class="video-description">
+                                A fun collaboration exploring the vibrant streets of Kuala Lumpur after 10 PM, capturing
+                                its unique culture, lights, and energy through a fresh perspective.
+                            </p>
+                            <div class="gear-specs-group">
+                                <h4 class="specs-group-title">EQUIPMENT & SOFTWARE</h4>
+                                <div class="specs-pills">
+                                    <span class="spec-pill pill-orange">Sony ZV-E10</span>
+                                    <span class="spec-pill pill-orange">Sony 50mm F1.8</span>
+                                    <span class="spec-pill pill-orange">iPhone 13 Pro Max</span>
+                                    <span class="spec-pill pill-teal">Adobe Premiere Pro</span>
+                                </div>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=PkuWN5TiKh0" target="_blank" rel="noopener noreferrer" class="watch-youtube-btn">
+                                <span>Watch on YouTube</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Video Item 3 -->
+                    <div class="video-showcase-item reveal-item" style="--reveal-delay: 0.5s;">
+                        <div class="video-thumbnail-container">
+                            <img src="/Assets/cinematic/cinematic_3.webp" alt="Malaysia Festival 2025 Thumbnail" class="video-thumbnail" width="550" height="350" loading="lazy" decoding="async">
+                            <div class="play-overlay">
+                                <a href="https://www.youtube.com/watch?v=bnB3_eHhj9g" target="_blank" rel="noopener noreferrer" class="play-btn" aria-label="Play Silent Echoes on YouTube">
+                                    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                        <polygon points="6,4 20,12 6,20" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info-content">
+                            <span class="video-category">EZ STUDIO // MONTAGE VIDEO</span>
+                            <h3 class="video-title">Malaysia Festival 2025</h3>
+                            <p class="video-description">
+                                A promotional video created with the Malaysian Embassy in Seoul for the Malaysia
+                                Festival and Visit Malaysia 2026, showcasing Malaysia through cinematic visuals.
+                            </p>
+                            <div class="gear-specs-group">
+                                <h4 class="specs-group-title">EQUIPMENT & SOFTWARE</h4>
+                                <div class="specs-pills">
+                                    <span class="spec-pill pill-orange">Sony ZV-E10</span>
+                                    <span class="spec-pill pill-orange">Sony A6400</span>
+                                    <span class="spec-pill pill-orange">Sigma 17-50mm F2.8</span>
+                                    <span class="spec-pill pill-orange">Sigma 50mm F1.8</span>
+                                    <span class="spec-pill pill-teal">Adobe Premiere Pro</span>
+                                </div>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=bnB3_eHhj9g" target="_blank" rel="noopener noreferrer" class="watch-youtube-btn">
+                                <span>Watch on YouTube</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photography Section -->
+        <section class="photography-section reveal-section" id="photography">
+            <div class="portfolio-container">
+                <span class="about-badge reveal-item" style="--reveal-delay: 0.1s;">02 | PHOTOGRAPHY</span>
+                <h2 class="section-title reveal-item" style="--reveal-delay: 0.2s;">
+                    PHOTOGRAPHIC ESSAYS<span class="highlight text-glow">.</span>
+                </h2>
+
+                <div class="photography-grid reveal-item" style="--reveal-delay: 0.3s;">
+                    <!-- Photo 1 -->
+                    <div class="photo-card" data-full-src="/Assets/cinematic/photo_1.webp" data-title="Piercing The Sky" data-specs="Sony ZV-E10 // 50mm // f/1.8" data-location="Hangang, Seoul">
+                        <img src="/Assets/cinematic/photo_1-thumb.webp" alt="Piercing The Sky" class="photo-img" width="400" height="500" loading="lazy" decoding="async">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">Piercing The Sky</h3>
+                                <span class="photo-card-specs">Sony ZV-E10 // 50mm // f/1.8</span>
+                                <span class="photo-card-location">Hangang, Seoul</span>
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 2 -->
+                    <div class="photo-card" data-full-src="/Assets/cinematic/photo_2.webp" data-title="Brutalist Lover" data-specs="Sony ZV-E10 // 50mm // f/1.8" data-location="Dongdaemun Plaza, Seoul">
+                        <img src="/Assets/cinematic/photo_2-thumb.webp" alt="Brutalist Lover" class="photo-img" width="400" height="500" loading="lazy" decoding="async">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">Brutalist Lover</h3>
+                                <span class="photo-card-specs">Sony ZV-E10 // 50mm // f/1.8</span>
+                                <span class="photo-card-location">Dongdaemun Plaza, Seoul</span>
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 3 -->
+                    <div class="photo-card" data-full-src="/Assets/cinematic/photo_3.webp" data-title="Florist Dream" data-specs="Iphone 13 Pro Max // 77mm // f/2.8" data-location="Pearl Point, Kuala Lumpur">
+                        <img src="/Assets/cinematic/photo_3-thumb.webp" alt="Florist Dream" class="photo-img" width="400" height="500" loading="lazy" decoding="async">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">Florist Dream</h3>
+                                <span class="photo-card-specs">Iphone 13 Pro Max // 77mm // f/2.8</span>
+                                <span class="photo-card-location">Pearl Point, Kuala Lumpur</span>
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 4 -->
+                    <div class="photo-card" data-full-src="/Assets/cinematic/photo_4.webp" data-title="Me & Green" data-specs="Sony A6500 // 85mm // f/1.8" data-location="Bukit Bintang, Kuala Lumpur">
+                        <img src="/Assets/cinematic/photo_4-thumb.webp" alt="Me & Green" class="photo-img" width="400" height="500" loading="lazy" decoding="async">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">Me & Green</h3>
+                                <span class="photo-card-specs">Sony A6500 // 85mm // f/1.8</span>
+                                <span class="photo-card-location">Bukit Bintang, Kuala Lumpur</span>
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 5 -->
+                    <div class="photo-card" data-full-src="/Assets/cinematic/photo_5.webp" data-title="Golden Shot" data-specs="Sony ZV-E10 // 70mm // f/2.8" data-location="Dongyang Mirae University, Seoul">
+                        <img src="/Assets/cinematic/photo_5-thumb.webp" alt="Golden Shot" class="photo-img" width="400" height="500" loading="lazy" decoding="async">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">Golden Shot</h3>
+                                <span class="photo-card-specs">Sony ZV-E10 // 70mm // f/2.8</span>
+                                <span class="photo-card-location">Dongyang Mirae University, Seoul</span>
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 6 -->
+                    <div class="photo-card" data-full-src="/Assets/cinematic/photo_6.webp" data-title="Independent Twin Tower" data-specs="Iphone 13 Pro Max // 57mm // f/1.5" data-location="Petronas Twin Tower, Kuala Lumpur">
+                        <img src="/Assets/cinematic/photo_6-thumb.webp" alt="Independent Twin Tower" class="photo-img" width="400" height="500" loading="lazy" decoding="async">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">Independent Twin Tower</h3>
+                                <span class="photo-card-specs">Iphone 13 Pro Max // 57mm // f/1.5</span>
+                                <span class="photo-card-location">Petronas Twin Tower, Kuala Lumpur</span>
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 7 -->
+                    <div class="photo-card" data-full-src="/Assets/cinematic/photo_7.webp" data-title="Wind Dancer" data-specs="Iphone 13 Pro Max // 77mm // f/2.8" data-location="Petronas Philaharmonic Hall, Kuala Lumpur">
+                        <img src="/Assets/cinematic/photo_7-thumb.webp" alt="Wind Dancer" class="photo-img" width="400" height="500" loading="lazy" decoding="async">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">Wind Dancer</h3>
+                                <span class="photo-card-specs">Iphone 13 Pro Max // 77mm // f/2.8</span>
+                                <span class="photo-card-location">Petronas Philaharmonic Hall, Kuala Lumpur</span>
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 8 -->
+                    <div class="photo-card" data-full-src="/Assets/cinematic/photo_8.webp" data-title="Color of Village" data-specs="Sony ZV-E10 // 50mm // f/7.1" data-location="Gamcheon Village, Busan">
+                        <img src="/Assets/cinematic/photo_8-thumb.webp" alt="Color of Village" class="photo-img" width="400" height="500" loading="lazy" decoding="async">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">Color of Village</h3>
+                                <span class="photo-card-specs">Sony ZV-E10 // 50mm // f/7.1</span>
+                                <span class="photo-card-location">Gamcheon Village, Busan</span>
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 9 -->
+                    <div class="photo-card" data-full-src="/Assets/cinematic/photo_9.webp" data-title="Our Anniversary" data-specs="Sony ZV-E10 // 50mm // f/1.8" data-location="Seoul Forest, Seoul">
+                        <img src="/Assets/cinematic/photo_9-thumb.webp" alt="Our Anniversary" class="photo-img" width="400" height="500" loading="lazy" decoding="async">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">Our Anniversary</h3>
+                                <span class="photo-card-specs">Sony ZV-E10 // 50mm // f/1.8</span>
+                                <span class="photo-card-location">Seoul Forest, Seoul</span>
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 10 -->
+                    <div class="photo-card" data-full-src="/Assets/cinematic/photo_10.webp" data-title="Treehouse Story" data-specs="Sony ZV-E10 // 50mm // f/1.8" data-location="Seongsu, Seoul">
+                        <img src="/Assets/cinematic/photo_10-thumb.webp" alt="Treehouse Story" class="photo-img" width="400" height="500" loading="lazy" decoding="async">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">Treehouse Story</h3>
+                                <span class="photo-card-specs">Sony ZV-E10 // 50mm // f/1.8</span>
+                                <span class="photo-card-location">Seongsu, Seoul</span>
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 11 -->
+                    <div class="photo-card" data-full-src="/Assets/cinematic/photo_11.webp" data-title="I did it" data-specs="Sony ZV-E10 // 50mm // f/1.8" data-location="Childrens Grand Park, Seoul">
+                        <img src="/Assets/cinematic/photo_11-thumb.webp" alt="'I did it'" class="photo-img" width="400" height="500" loading="lazy" decoding="async">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">"I did it"</h3>
+                                <span class="photo-card-specs">Sony ZV-E10 // 50mm // f/1.8</span>
+                                <span class="photo-card-location">Childrens Grand Park, Seoul</span>
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 12 -->
+                    <div class="photo-card" data-full-src="/Assets/cinematic/photo_12.webp" data-title="Graduated, what's next?" data-specs="Sony ZV-E10 // 50mm // f/1.8" data-location="Korea University, Seoul">
+                        <img src="/Assets/cinematic/photo_12-thumb.webp" alt="Graduated, what's next?" class="photo-img" width="400" height="500" loading="lazy" decoding="async">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3 class="photo-card-title">Graduated, what's next?</h3>
+                                <span class="photo-card-specs">Sony ZV-E10 // 50mm // f/1.8</span>
+                                <span class="photo-card-location">Korea University, Seoul</span>
+                            </div>
+                            <div class="expand-indicator">+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</BaseLayout>
