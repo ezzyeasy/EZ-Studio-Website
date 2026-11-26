@@ -292,7 +292,8 @@ def main() -> None:
 
     print(f"Optimizing assets: {RAW_DIR.name}/ -> public/Assets/ (force={args.force})\n")
 
-    for root, _, filenames in os.walk(RAW_DIR):
+    for root, dirs, filenames in os.walk(RAW_DIR):
+        dirs[:] = [d for d in dirs if not d.startswith("_") and not d.startswith(".")]
         for fn in sorted(filenames):
             if fn.startswith("._") or fn == ".DS_Store":
                 continue
